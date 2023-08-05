@@ -20,12 +20,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-.pop{ font-family: 'Poppins', sans-serif; }
  
 .logo {
-    font-size: 30px;
-    font-weight: 700;
     padding: 10px;
     text-align: center;
 }
@@ -33,24 +29,33 @@
     margin-bottom: 17px;
 }
 
- header li{
-    margin-left: 20px;
+header{
+    width: 100%;
+    background-color: whitesmoke;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); 
+    opacity: 0.7;
+}
+
+header li{
+    margin-top: 40px;
+    margin-left: 10px;
     font-size: 16px;
     font-weight: 500;
     }
 
 header nav li{
-    line-height: 79px;
+    height: 48px;
+    width: auto;
     font-size: 20px;
     font-weight: 700;
 }
 
-header nav li a{
-    transition:0.3;
-}
-
-header nav li a:hover{
+header nav li:hover{
     color: skyblue;
+    border-bottom: 5px solid yellowgreen;
     transition:0.3;
 }
 
@@ -62,17 +67,6 @@ header nav li a:hover{
     display:flex;
     margin-bottom: 60px;    
 }
-
-.sora-hero_inner{
-
-    width: 100%;
-    margin-top: 350px;
-    z-index: 1;
-}
-.sora-hero_inner img{
-    margin-left: 300px;
-}
-
 
 .title{
     font-size: 40px;
@@ -204,14 +198,21 @@ dl.home{
     width: 20%;
 }
 
-
-
 .kouji-chu1{
     margin-bottom: 60px;
 }
 
 #key_visual{
+    margin-top: 50px;
     margin-bottom: 60px;
+    width: 100%;
+}
+
+#key_visual .logo1{
+    position: relative;
+    top: 400px;
+    left: 700px;
+    z-index: 1;
 }
 
 .slider img{
