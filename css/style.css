@@ -352,3 +352,11 @@ perspective: 600px;
 #companny dt{
     width: 70%;
 }
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    cursor: pointer;
+  }
