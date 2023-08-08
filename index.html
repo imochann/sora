@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>株式会社　SORA</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  
     <!-- Google font -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <!-- リセットｃｓｓ -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
      <script src="ingex.js"></script>
 </head>
 <body>
@@ -47,19 +47,19 @@
             <img src="images/Logo_02.png" class="logo1" alt="logo1" width="530px" height="82px">
             <div class="slider">
                 <div>
-                    <img src="images/keshouhinn-1.jpg" alt="スライドショー" width="500" height="300" >
+                    <img src="images/keshouhinn-1.jpg" alt="スライドショー" >
                 </div>
                 <div>
-                    <img src="images/keshouhinn-2.jpg" alt="スライドショー" width="500" height="300">
+                    <img src="images/keshouhinn-2.jpg" alt="スライドショー" >
                 </div>
                 <div>
-                    <img src="images/keshouhinn-3.jpg" alt="スライドショー" width="500" height="300">
+                    <img src="images/keshouhinn-3.jpg" alt="スライドショー">
                 </div>
                 <div>
-                    <img src="images/roujinn_1.png" alt="スライドショー" width="500" height="300">
+                    <img src="images/roujinn_1.png" alt="スライドショー">
                 </div>
                 <div>
-                    <img src="images/roujinn_2.png" alt="スライドショー" width="500" height="300">
+                    <img src="images/roujinn_2.png" alt="スライドショー">
                 </div>
             </div>
         </div>
@@ -196,11 +196,11 @@
             <div class="card-back-3"></div>
         </div>
     </section>
-    <a id="back-to-top" href="#"><img src="images/UpArrow.png" alt="top" width="50" height="50"></a>
+    <a id="back-to-top" href="#"><img src="images/UpArrow.png" alt="top" width="50" height="50"><br>&nbsp;&nbsp;&nbsp;Top</a>
     </main>
 
-    <audio controls autoplay loop src="music/MusMus-BGM-141.mp3"  type="audio/mp3"></audio> 
-music/dear-you.mp3
+    <!-- <audio controls autoplay loop src="music/MusMus-BGM-141.mp3"  type="audio/mp3"></audio> 
+music/dear-you.mp3 -->
     <!-- <embed src="music/maou_14_shining_star.mp3" type="audio/mp3" autostart="tlue" loop="true" repeat="true"> -->
 
     <footer>
@@ -219,12 +219,14 @@ music/dear-you.mp3
         </div>
 
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-     <script>
-        $(function(){
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="slick.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+     <script type="text/javascript">
+        $(document).on('ready', function(){
         $(".slider").slick({
-            arrows: true,
+            arrows:true,
             dots: true,
             autoplay: true,
             autoplayspeed: 10000
