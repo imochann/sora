@@ -345,19 +345,25 @@ perspective: 600px;
     font-weight: 500;
 }
 
-#companny dl{
+#companny table{
     max-width: 900px;
-    background-color: aquamarine;
     margin-left: auto;
+    border: 2px solid black;
 }
 
-#companny dd{
-    width: 30%;
+#companny th{
+    color: #fff;
+    padding: 10px;
+    width: 300px;
     font-weight: 700;
+    background-color: blue;
+    border: 2px solid black;
 }
 
-#companny dt{
-    width: 70%;
+#companny td{
+    padding: 10px;
+    width: 1000px;
+    background-color: white;
 }
 
 #back-to-top {
