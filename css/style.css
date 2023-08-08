@@ -18,11 +18,13 @@
 .flex{
     display: flex;
     justify-content: space-between;
+
     flex-wrap: wrap;
 }
  
 .logo {
     padding: 10px;
+    
     text-align: center;
 }
 .logo_center{
