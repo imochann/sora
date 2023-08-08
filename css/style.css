@@ -18,11 +18,13 @@
 .flex{
     display: flex;
     justify-content: space-between;
+
     flex-wrap: wrap;
 }
  
 .logo {
     padding: 10px;
+
     text-align: center;
 }
 .logo_center{
@@ -36,7 +38,6 @@ header{
     z-index: 2;
     top: 0;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); 
-    opacity: 0.7;
 }
 
 header li{
@@ -44,6 +45,7 @@ header li{
     margin-left: 10px;
     font-size: 16px;
     font-weight: 500;
+    list-style-type: none;
     }
 
 header nav li{
@@ -214,14 +216,20 @@ dl.home{
     left: 700px;
     z-index: 1;
 }
+.slider{
+    width: 100%;
+    margin: 0 auto;
+}
 
 .slider img{
-    width: 70vw;
+    width: 100%;
     height: 600px;
-    margin: 0 auto;
-    border: solid 5px;
-    border-color: orangered;
 }
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
 
 *{
     transition: .5s;
@@ -338,17 +346,32 @@ perspective: 600px;
     font-weight: 500;
 }
 
-#companny dl{
+#companny table{
     max-width: 900px;
-    background-color: aquamarine;
     margin-left: auto;
+    border: 2px solid black;
 }
 
-#companny dd{
-    width: 30%;
+#companny th{
+    color: #fff;
+    padding: 10px;
+    width: 300px;
     font-weight: 700;
+    background-color: blue;
+    border: 2px solid black;
 }
 
-#companny dt{
-    width: 70%;
+#companny td{
+    padding: 10px;
+    width: 1000px;
+    background-color: white;
 }
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
