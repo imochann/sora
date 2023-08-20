@@ -30,6 +30,9 @@
 .logo_center{
     margin-bottom: 17px;
 }
+.logo img{
+    display: inline-block;
+}
 
 header{
     width: 100%;
@@ -374,4 +377,65 @@ perspective: 600px;
     display: none;
     cursor: pointer;
     text-decoration: none;
+  }
+
+/* Q&A */
+.faq {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+.question {
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+/* TABS area */
+.tab-container {
+    text-align: center;
+  }
+  
+.tab-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    background-color: #f0f0f0;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+.tab-button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+.tab-button.active {
+    background-color: #fff;
+    border-color: #333;
+  }
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  
+.tab-content.active {
+    display: block;
   }
