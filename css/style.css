@@ -30,6 +30,9 @@
 .logo_center{
     margin-bottom: 17px;
 }
+.logo img{
+    display: inline-block;
+}
 
 header{
     width: 100%;
@@ -374,4 +377,26 @@ perspective: 600px;
     display: none;
     cursor: pointer;
     text-decoration: none;
+  }
+
+/* Q&A */
+.faq {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+.question {
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    transition: max-height 0.4s ease-in-out;
   }
