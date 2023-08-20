@@ -19,7 +19,6 @@ function openTab(evt, tabName) {
 document.getElementById("tab1").style.display = "block";
 document.getElementsByClassName("tab-button")[0].classList.add("active");
 
-
 // Q&A Funct
 const faqs = document.querySelectorAll('.faq');
 
@@ -56,5 +55,3 @@ document.addEventListener('DOMContentLoaded', function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
-
-
