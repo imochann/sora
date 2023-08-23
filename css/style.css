@@ -154,8 +154,25 @@ margin-bottom: 16px;
     width: 70%;
 }
 
+.facility img{
+    border-radius: 20px;
+
+}
+#tab1{
+    border-radius: 30px;
+} 
+
+#tab2{
+    border-radius: 30px;
+} 
+
+#tab3{
+    border-radius: 30px;
+} 
+
 dl.home{
     margin-bottom: 60px;
+    margin: auto;
 }
 
 #job_information dd{
