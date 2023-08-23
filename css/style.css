@@ -350,9 +350,12 @@ perspective: 600px;
 }
 
 #companny table{
-    max-width: 900px;
-    margin-left: auto;
+    max-width: 800px;
+    margin-left: 15%;
     border: 2px solid black;
+    
+    
+    
 }
 
 #companny th{
@@ -366,8 +369,9 @@ perspective: 600px;
 
 #companny td{
     padding: 10px;
-    width: 1000px;
+    width: 500px;
     background-color: white;
+    border: 2px solid black;
 }
 
 #back-to-top {
