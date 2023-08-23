@@ -351,8 +351,10 @@ perspective: 600px;
 
 #companny table{
     max-width: 800px;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     border: 2px solid black;
+    margin: auto;
+    
     
     
     
