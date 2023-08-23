@@ -25,10 +25,10 @@ const faqs = document.querySelectorAll('.faq');
 function toggleAnswer() {
   const answer = this.nextElementSibling;
   if (answer.style.maxHeight) {
-    answer.style.padding = '0px 10px 0px 100px'; // Menghapus padding saat elemen tertutup
+    answer.style.padding = '0px 10px 0px 20px'; // Menghapus padding saat elemen tertutup
     answer.style.maxHeight = null;
   } else {
-    answer.style.padding = '10px 10px 30px 100px'; // Menambahkan padding saat elemen terbuka
+    answer.style.padding = '10px 10px 30px 20px'; // Menambahkan padding saat elemen terbuka
     answer.style.maxHeight = answer.scrollHeight + 'px';
   }
 }
