@@ -62,7 +62,8 @@ header nav li:hover{
     color: skyblue;
     border-bottom: 5px solid yellowgreen;
     transition:0.3;
-}
+   }
+
 
 #sora-hero{
     background-image: url(../images/soranogazou１.jpg);
@@ -124,6 +125,42 @@ strong{
     font-weight: 500;
 }
 
+.swiper-container{
+    padding: 30px 0 50px;
+    background: #eeeeee;
+}
+.swiper-container img{
+    width: 500pt;
+    height: 300px;
+}
+.s-fade-wrap{
+    position: relative;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.s-fade-text{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    color: #eeeeee;
+    font-size: 5vw;    
+}
+
+.swiper-slide-active .s-fade-text{
+    animation: slideTextFade 1.75s ease 0s normal;
+
+}
+
+@keyframes slideTextFade {
+    0%, 25% {
+        opacity: 0;
+}
+   100% {
+    opacity: 1;
+   }
+}
 #survice{
 margin-bottom: 60px;
     }
@@ -232,9 +269,24 @@ dl.home{
 
 #key_visual .logo1{
     position: relative;
-    top: 400px;
-    left: 700px;
+    /* background-color: #D70100; */
+    top: 550px;
+    left: 900px;
     z-index: 1;
+}
+#key_visual p{
+    position: absolute;
+    /* background-color: #D70100; */
+    color: aqua;
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px #000000 ;
+    top: 250px;
+    left: 50px;
+    right: 100px;
+    line-height: 5rem;
+    z-index: 1;
+
 }
 .slider{
     width: 100%;
