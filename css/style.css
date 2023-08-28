@@ -81,12 +81,12 @@ header nav li:hover{
     padding: 15px;
 }
 
-.top{
+/* .top{
     border: solid;
     background-color: blue;
     color: #fff;
     margin-bottom: 60px;
-}
+} */
 
 strong{
      background-image: linear-gradient(180deg, #fcfcfa 0%, #fcfcfa 70%, skyblue 70%, skyblue 100%);                                                                                                                
