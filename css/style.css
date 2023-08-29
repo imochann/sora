@@ -449,4 +449,9 @@ perspective: 600px;
     transition: max-height 0.4s ease-in-out;
   }
 
- 
+  footer{
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 20px;
+}
