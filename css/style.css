@@ -246,8 +246,8 @@ dl.home{
 #key_visual .logo1{
     position: relative;
     /* background-color: #D70100; */
-    top: 550px;
-    left: 900px;
+    top: 500px;
+    left: 680px;
     z-index: 1;
 }
 #key_visual p{
@@ -258,8 +258,8 @@ dl.home{
     font-weight: 800;
     text-shadow: 2px 2px 2px #000000 ;
     top: 250px;
-    left: 50px;
-    right: 100px;
+    left: 120px;
+    right: 120px;
     line-height: 5rem;
     z-index: 1;
 
