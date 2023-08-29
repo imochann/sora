@@ -24,7 +24,6 @@
  
 .logo {
     padding: 10px;
-
     text-align: center;
 }
 .logo_center{
@@ -51,18 +50,24 @@ header li{
     list-style-type: none;
     }
 
-header nav li{
+header nav {
+    background-color: #f4f4f4;
+  }
+
+header nav a{
+    padding: 15px;
+    color: #2c3e50;
     height: 48px;
     width: auto;
     font-size: 20px;
     font-weight: 700;
 }
 
-header nav li:hover{
-    color: skyblue;
-    border-bottom: 5px solid yellowgreen;
-    transition:0.3;
-   }
+header nav a:hover {
+    color: #1074bc;
+    border-bottom: 5px solid #1074bc;
+    transition: 0.3s;
+  }
 
 .title{
     font-size: 40px;
@@ -443,3 +448,5 @@ perspective: 600px;
     padding: 0 10px;
     transition: max-height 0.4s ease-in-out;
   }
+
+ 
