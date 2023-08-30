@@ -62,38 +62,7 @@
                 </div>
             </div>
 
-        </div>
-    
-
-            <!-- <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="s-fade-wrap">
-                            <img src="images/keshouhinn-2.jpg" alt="スライドショー">
-                            <span class="s-fade-text">slide 1</span>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="s-fade-wrap">
-                            <img src="images/keshouhinn-1.jpg" alt="スライドショー">
-                            <span class="s-fade-text">slide 2</span>
-                        </div>
-                    </div>                    <div class="swiper-slide">
-                        <div class="s-fade-wrap">
-                            <img src="images/keshouhinn-3.jpg" alt="スライドショー">
-                            <span class="s-fade-text">slide 3</span>
-                        </div>
-                    </div>
-                </div>   
-
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-     -->
-
-
-    
+        </div>    
 
      <section id="concept" class="container">
             <br><br><br><br><br>
@@ -129,13 +98,24 @@
         <div class="column-2_3">
         </div>
      </section>
+
      <section id="survice" class="container">
         <br><br><br><br><br>
         <h2 class="title"><strong>施設案内</strong></h2>
         <hr><br><br>
                      <div class="facility">
                         <h3 class="title"><strong>グループホーム　ファミリー</strong></h3>
-                        <div class="logo"><img src="images//pict01.jpg" alt="bld" width="500px" height="250px"></div>
+                        <table class="faci">
+                            <tr>
+                                <th><div class="logo"><img src="images//pict01.jpg" alt="bld" width="500px" height="250px"></div></th>
+                                <td><div class="logo"><img src="images//pict01.jpg" alt="bld" width="500px" height="100px"></div></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><div class="logo"><img src="images//pict01.jpg" alt="bld" width="500px" height="100px"></div></td>
+                            </tr>
+                        </table>
+                        
                         <dl class="flex home">
                             <dd>入居者</dd>
                             <dt>？</dt>
@@ -369,7 +349,8 @@ music/dear-you.mp3 -->
             dots: true,
             autoplay: true,
             autoplayspeed: 10000,
-            fade:true, cssEase:'linear',
+            fade:true, 
+            cssEase:'linear'
         });
         });
      </script>
