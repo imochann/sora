@@ -226,7 +226,52 @@
         <br><br><br>
         </div>
     </section>
-    <section id="question" class="a">
+    <section id="photobebas" class="a">
+        <br><br><br>
+        <div class="slider2">
+            <div>
+                <img src="images/Reff/alam.jpg" alt="スライドショー" >
+            </div>
+            <div>
+                <img src="images/Reff/reff1.jpg" alt="スライドショー" >
+            </div>
+            <div>
+                <img src="images/Reff/toire.jpg" alt="スライドショー" >
+            </div>
+            <div>
+                <img src="images/Reff/galaxy1.jpg" alt="スライドショー">
+            </div>
+            <div>
+                <img src="images/Reff/furoba.jpg" alt="スライドショー">
+            </div>
+            <div>
+                <img src="images/Reff/GH.jpg" alt="スライドショー">
+            </div>
+        </div>
+        <br>
+        <div class="slider2-nav">
+            <div>
+                <img src="images/Reff/alam.jpg" alt="スライドショー" >
+            </div>
+            <div>
+                <img src="images/Reff/reff1.jpg" alt="スライドショー" >
+            </div>
+            <div>
+                <img src="images/Reff/toire.jpg" alt="スライドショー" >
+            </div>
+            <div>
+                <img src="images/Reff/galaxy1.jpg" alt="スライドショー">
+            </div>
+            <div>
+                <img src="images/Reff/furoba.jpg" alt="スライドショー">
+            </div>
+            <div>
+                <img src="images/Reff/GH.jpg" alt="スライドショー">
+            </div>
+        </div>
+        <br><br><br>
+    </section>
+    <section id="question" class="b">
         <div class="container">
         <br><br><br><br><br>
         <h2 class="title"><strong>Q&A</strong></h2>
@@ -312,7 +357,7 @@
         </div>
     </section>
     
-    <section class="flex b">
+    <section class="flex a">
         <div class="card-item">
          <div class="card-front-1"></div>
          <div class="card-back-1"></div>
@@ -334,7 +379,7 @@
 music/dear-you.mp3 -->
     <!-- <embed src="music/maou_14_shining_star.mp3" type="audio/mp3" autostart="tlue" loop="true" repeat="true"> -->
 
-    <section id="companny" class="a">
+    <section id="companny" class="b">
         <div class="container">
         <br><br><br><br><br>
         <h2 class="title"><strong>会社概要</strong></h2>
@@ -390,6 +435,29 @@ music/dear-you.mp3 -->
             fade:true, 
             cssEase:'linear'
         });
+        });
+     </script>
+     <script type="text/javascript">
+        $(document).on('ready', function(){
+        $('.slider2').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider2-nav'
+        });
+        $('.slider2-nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.slider2',
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplayspeed: 1000,
+        centerMode: true,
+        focusOnSelect: true
+        });
+
         });
      </script>
 </body>
