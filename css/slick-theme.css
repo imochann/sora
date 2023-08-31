@@ -26,8 +26,8 @@
     top: 50%;
 
     display: block;
-
-    width: 60px;
+    z-index: 99;
+    width: 70px;
     height: 60px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
@@ -67,11 +67,11 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 60px;                       /* arrrow size */
-    line-height: 60px;
+    font-size: 60px;
+    line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -154,9 +154,9 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
-    padding: 5px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
 
     cursor: pointer;
 
@@ -178,15 +178,15 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 10px;
     line-height: 20px;
 
     position: absolute;
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 
     content: '•';
     text-align: center;
