@@ -89,9 +89,7 @@ strong{
      background-image: linear-gradient(180deg, transparent 0%, whitesmoke 40%, skyblue 70%, skyblue 70%);                                                                                                                
     }
 
-#concept{
-    margin-bottom: 60px;
-}
+  
 
 .text{
     font-size: 40px;
@@ -103,9 +101,16 @@ strong{
     line-height: 2;
     margin-bottom: 60px;
 }
+#concept{
+    border: #000000 solid 2px;
+    width: 100%;
+}
+
 
 #concept ul{
     margin-bottom: 60px;
+    width: 50%;
+    display: inline;
 }
 
 #concept li{
@@ -115,11 +120,6 @@ strong{
 
 #concept li span{
     color: blue;
-}
-
-#concept p{
-    line-height: 2;
-    font-weight: 500;
 }
 
 .swiper-container{
@@ -254,12 +254,9 @@ margin-bottom: 16px;
 
 .column-1_2{
     width: 48%;
-    /* background-color: aqua; */
+    background-color: aqua;
 }
 
-.column-1_2 img{
-    margin-left: 75px;
-}
 
 .offer{
     background-image: linear-gradient(to left, transparent 55%, white), url("../images/Reff/galaxy1.jpg");
