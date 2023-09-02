@@ -8,6 +8,7 @@
     font-family: 'Noto Sans JP', sans-serif;
  }
 
+
 .a{
     background-color: whitesmoke;
 }
@@ -25,7 +26,6 @@
 .flex{
     display: flex;
     justify-content: space-between;
-
     flex-wrap: wrap;
 }
  
@@ -159,7 +159,6 @@ strong{
 #survice{
 margin-bottom: 60px;
     }
-
 #survice h3{
         font-size: 20px;
         font-weight: 500;
@@ -203,7 +202,11 @@ margin-bottom: 16px;
     width: 250px;
     height: 160px;
     transition: transform 0.3s; 
+    
 }
+
+
+
 .facility .textarea{
     padding: 10px;
     width: 500px;
@@ -505,6 +508,7 @@ perspective: 600px;
     overflow: hidden;
     padding: 0 10px;
     transition: max-height 0.4s ease-in-out;
+    font-weight: 700;
   }
 .question:hover {
     border-left: 10px solid #60e016;
