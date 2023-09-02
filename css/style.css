@@ -9,6 +9,7 @@
  }
 
 
+
 .a{
     background-color: whitesmoke;
 }
@@ -81,6 +82,7 @@ header nav a:hover {
     font-weight: 700;
     margin-bottom: 20px;
     padding: 15px;
+    text-shadow: 2px 2px 2px orangered;
 }
 
 strong{
@@ -160,9 +162,10 @@ strong{
 margin-bottom: 60px;
     }
 #survice h3{
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 500;
         margin-bottom: 20px;
+        text-shadow: 2px 2px 2px yellow;
     }
 #survice h4{
 font-size: 30px;
@@ -175,6 +178,7 @@ margin-bottom: 16px;
     max-width: 900px;
     background-color: skyblue;
     margin-left: auto;
+    margin-bottom: 60px;
 }
 
 #survice dd{
@@ -189,12 +193,18 @@ margin-bottom: 16px;
 .detail{
     margin: auto;
 }
+ .facility  {
+    background-color: #f5deb3;
+
+    
+ }
 
 .facility .main img{
     padding: 10px;
     width: 500px;
     height: 300px;
     transition: transform 0.3s; 
+    
 }
 
 .facility .sub img{
@@ -202,7 +212,8 @@ margin-bottom: 16px;
     width: 250px;
     height: 160px;
     transition: transform 0.3s; 
-    
+    border-radius: 50%;
+   
 }
 
 
@@ -461,7 +472,9 @@ perspective: 600px;
     border-collapse: collapse;
     border: 1px solid #444;
 }
-
+#companny tr{
+    font-weight: 500;
+}
 #companny th {
     color: #fff;
     padding: 10px;
