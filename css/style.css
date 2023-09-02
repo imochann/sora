@@ -172,18 +172,23 @@ margin-bottom: 16px;
 }    
 
 #survice dl{
+    font-size: 20px;
     max-width: 900px;
-    background-color: aquamarine;
+    background-color: skyblue;
     margin-left: auto;
 }
 
 #survice dd{
-    width: 30%;
+    width: 50%;
     font-weight: 700;
 }
 
 #survice dt{
-    width: 70%;
+    width: 50%;
+}
+
+.detail{
+    margin: auto;
 }
 
 .facility .main img{
@@ -225,7 +230,7 @@ margin-bottom: 16px;
 #job_information dl{
     max-width: 900px;
     background-color: aquamarine;
-    margin-left: auto;
+    margin: auto;
 }
 
 #column-1_1{
