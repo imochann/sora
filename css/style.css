@@ -176,27 +176,37 @@ margin-bottom: 16px;
 #survice dl{
     font-size: 20px;
     max-width: 900px;
-    background-color: skyblue;
     margin-left: auto;
     margin-bottom: 60px;
 }
 
 #survice dd{
+    padding: 10px;
     width: 50%;
     font-weight: 700;
+    border: 1px solid black
 }
 
 #survice dt{
+    padding: 10px;
     width: 50%;
+    border: 1px solid black
 }
 
 .detail{
     margin: auto;
 }
+
+.green1 {
+    background-color: #7FFF00;
+}
+
+.green2 {
+    background-color: #228B22;
+}
+
  .facility  {
     background-color: #f5deb3;
-
-    
  }
 
 .facility .main img{
@@ -212,11 +222,18 @@ margin-bottom: 16px;
     width: 250px;
     height: 160px;
     transition: transform 0.3s; 
-    border-radius: 50%;
+    border-radius: 80px;
    
 }
 
-
+.facility .sub2 img{
+    padding: 10px;
+    width: 450px;
+    height: 140px;
+    transition: transform 0.3s; 
+    border-radius: 20px;
+   
+}
 
 .facility .textarea{
     padding: 10px;
@@ -224,11 +241,7 @@ margin-bottom: 16px;
     height: 140px;
 }
 
-.facility .main:hover img {
-    transform: scale(1.1); 
-}
-
-.facility .sub:hover img {
+.facility .main:hover , .sub:hover img , .sub2:hover img {
     transform: scale(1.1); 
 }
 
