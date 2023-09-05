@@ -184,25 +184,23 @@ margin-bottom: 16px;
     padding: 10px;
     width: 50%;
     font-weight: 700;
-    border: 1px solid black
 }
 
 #survice dt{
     padding: 10px;
     width: 50%;
-    border: 1px solid black
 }
 
 .detail{
     margin: auto;
 }
 
-.green1 {
-    background-color: #7FFF00;
+.blue1 {
+    background-color: #ADD8E6;
 }
 
-.green2 {
-    background-color: #228B22;
+.blue2 {
+    background-color: #87CEEB;
 }
 
  .facility  {
