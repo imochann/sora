@@ -30,7 +30,7 @@
     flex-wrap: wrap;
 }
  
-.logo {
+.center {
     padding: 10px;
     text-align: center;
 }
@@ -176,35 +176,41 @@ margin-bottom: 16px;
 #survice dl{
     font-size: 20px;
     max-width: 900px;
-    background-color: skyblue;
     margin-left: auto;
     margin-bottom: 60px;
 }
 
 #survice dd{
+    padding: 10px;
     width: 50%;
     font-weight: 700;
 }
 
 #survice dt{
+    padding: 10px;
     width: 50%;
 }
 
 .detail{
     margin: auto;
 }
+
+.blue1 {
+    background-color: #ADD8E6;
+}
+
+.blue2 {
+    background-color: #87CEEB;
+}
+
  .facility  {
     background-color: #f5deb3;
-
-    
+    padding: 40px;
  }
 
 .facility .main img{
-    padding: 10px;
     width: 500px;
-    height: 300px;
-    transition: transform 0.3s; 
-    
+    height: 300px;    
 }
 
 .facility .sub img{
@@ -212,11 +218,18 @@ margin-bottom: 16px;
     width: 250px;
     height: 160px;
     transition: transform 0.3s; 
-    border-radius: 50%;
+    border-radius: 80px;
    
 }
 
-
+.facility .sub2 img{
+    padding: 10px;
+    width: 450px;
+    height: 140px;
+    transition: transform 0.3s; 
+    border-radius: 20px;
+   
+}
 
 .facility .textarea{
     padding: 10px;
@@ -224,11 +237,7 @@ margin-bottom: 16px;
     height: 140px;
 }
 
-.facility .main:hover img {
-    transform: scale(1.1); 
-}
-
-.facility .sub:hover img {
+.facility .sub:hover img , .sub2:hover img {
     transform: scale(1.1); 
 }
 
@@ -613,3 +622,46 @@ perspective: 600px;
     width: 25%;
 }
   
+.zoom_item {
+    background: #1e4356;
+    overflow: hidden;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    border-radius: 4px;
+    margin: 0 0 30px 0;
+  }
+
+.zoom_item img {
+    transition: all 0.3s ease-in-out;
+  }
+
+.zoom_item .zoom_item-info {
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s linear;
+    text-align: center;
+    top: 10%;
+    left: 0;
+    right: 0;
+  }
+.zoom_item .zoom_item-info a {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+.zoom_item .zoom_item-info a:hover {
+    color: white;
+  }
+  
+.zoom_item:hover img {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+  
+.zoom_item:hover .zoom_item-info {
+    opacity: 1;
+    top: calc(50% - 30px);
+  }
