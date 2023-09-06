@@ -182,30 +182,40 @@ margin-bottom: 16px;
 
 #survice dd{
     padding: 10px;
-    width: 50%;
+    width: 70%;
     font-weight: 700;
+    border-right: #000000 solid 1px;
 }
 
 #survice dt{
     padding: 10px;
-    width: 50%;
+    width: 30%;
 }
 
 .detail{
-    margin: auto;
+    width: 300px;
+    border: #000000 solid 1px;
 }
+
+
 
 .blue1 {
     background-color: #ADD8E6;
+    border-bottom: #000000 solid 1px;
 }
 
 .blue2 {
     background-color: #87CEEB;
+    border-bottom: #000000 solid 1px;
 }
 
 .facility  {
     background-color: #f5deb3;
     padding: 40px;
+ }
+
+.sub2 center img{
+    margin-bottom: 60px;
  }
 
 .facility .main img{
@@ -218,8 +228,7 @@ margin-bottom: 16px;
     width: 250px;
     height: 160px;
     transition: transform 0.3s; 
-    border-radius: 50%;
-   
+    border-radius: 50%;  
 }
 
 .facility .sub2 img{
@@ -227,9 +236,7 @@ margin-bottom: 16px;
     width: 300px;
     height: 160px;
     transition: transform 0.3s; 
-    /* border-radius: 50%; */
-    border-radius: 45px 80px 30px 80px; 
-   
+    border-radius: 200px 180px 105px 55px; 
 }
 
 .facility .textarea{
