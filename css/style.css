@@ -191,24 +191,27 @@ margin-bottom: 16px;
     font-size: 20px;
     max-width: 900px;
     margin-left: auto;
-    margin-bottom: 60px;
+    margin-bottom: 60px;  
+    
 }
 
 #survice dd{
     padding: 10px;
     width: 70%;
     font-weight: 700;
-    border-right: #000000 solid 1px;
+
+    
 }
 
 #survice dt{
     padding: 10px;
     width: 30%;
+
 }
 
 .detail{
     width: 400px;
-    vertical-align: middle;
+    vertical-align: middle;        
 }
 
 
@@ -216,11 +219,16 @@ margin-bottom: 16px;
 .blue1 {
     background-color: #ADD8E6;
     border-bottom: #000000 solid 1px;
+    border-left: #000000 solid 1px;
+    border-top: #000000 solid 1px;
+    border-right: #000000 solid 1px;
 }
 
 .blue2 {
     background-color: #87CEEB;
-    border-bottom: #000000 solid 1px;
+    border-left: #000000 solid 1px;   
+    border-right: #000000 solid 1px;
+
 }
 
 .facility  {
