@@ -57,7 +57,7 @@ header{
     width: 100%;
     background-color: whitesmoke;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
 }
