@@ -186,6 +186,7 @@ margin-bottom: 16px;
 }    
 
 #survice dl{
+    padding: 10px;
     font-size: 20px;
     max-width: 900px;
     margin-left: auto;
@@ -205,8 +206,8 @@ margin-bottom: 16px;
 }
 
 .detail{
-    width: 300px;
-    border: #000000 solid 1px;
+    width: 400px;
+    vertical-align: middle;
 }
 
 
@@ -226,36 +227,25 @@ margin-bottom: 16px;
     padding: 40px;
  }
 
-.sub2 center img{
-    margin-bottom: 60px;
- }
-
 .facility .main img{
-    width: 500px;
-    height: 300px;    
+    width: 600px;
+    height: 350px;    
 }
 
 .facility .sub img{
-    padding: 10px;
-    width: 250px;
-    height: 160px;
+    width: 180px;
+    height: 100px;
     transition: transform 0.3s; 
     border-radius: 50%;  
 }
 
 .facility .sub2 img{
-    padding: 10px;
-    width: 300px;
-    height: 160px;
+    width: 250px;
+    height: 140px;
     transition: transform 0.3s; 
     border-radius: 200px 180px 105px 55px; 
 }
 
-.facility .textarea{
-    padding: 10px;
-    width: 500px;
-    height: 140px;
-}
 
 .facility .sub:hover img , .sub2:hover img {
     transform: scale(1.1); 
@@ -642,8 +632,8 @@ perspective: 600px;
 .zoom_item {
     background: #1e4356;
     overflow: hidden;
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 350px;
     position: relative;
     border-radius: 4px;
     margin: 0 0 30px 0;
