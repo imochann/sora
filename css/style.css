@@ -327,28 +327,31 @@ margin-bottom: 16px;
 }
 
 #key_visual{
-    margin-top: 50px;
+    position: relative;
+    margin-top: 95px;
     margin-bottom: 60px;
     width: 100%;
 }
 
 #key_visual .logo1{
-    position: relative;
+    position: absolute;
     /* background-color: #D70100; */
-    top: 500px;
-    left: 680px;
-    z-index: 1;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 #key_visual p{
     position: absolute;
-    /* background-color: #D70100; */
     color: aqua;
+    width: 80%;
+    max-width: 1900px;
     font-size: 30px;
     font-weight: 800;
     text-shadow: 2px 2px 2px #000000 ;
-    top: 250px;
-    left: 120px;
-    right: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     line-height: 5rem;
     z-index: 1;
 
