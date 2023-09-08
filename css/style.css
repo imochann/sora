@@ -231,6 +231,12 @@ margin-bottom: 16px;
 
 }
 
+#guide img{
+    padding: 40px;
+    width: 180px;
+    height: 180px;
+}
+
 .facility  {
     background-color: #f5deb3;
     padding: 40px;
@@ -245,10 +251,10 @@ margin-bottom: 16px;
     margin-left: -20px;
 }
 
-.facility .textarea1{
+.facility .textarea1, #guide .textarea1{
     width: 300px;
 }
-.facility .textarea2{
+.facility .textarea2, #guide .textarea2{
     width: 700px;
 }
 
