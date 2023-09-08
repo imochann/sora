@@ -236,8 +236,20 @@ margin-bottom: 16px;
     padding: 40px;
  }
 
-.facility .textarea{
-    border: 2px solid blue;
+.facility table tr td table tr td{
+    padding: 8px 50px;
+    font-size: 14px;
+}
+
+.facility table tr td table tr td p{
+    margin-left: -20px;
+}
+
+.facility .textarea1{
+    width: 300px;
+}
+.facility .textarea2{
+    width: 700px;
 }
 
 .facility .main{
