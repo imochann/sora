@@ -228,7 +228,9 @@ margin-bottom: 16px;
     padding: 40px;
  }
 
-
+.facility .textarea{
+    border: 2px solid blue;
+}
 
 .facility .main{
     padding: 0 150px;
