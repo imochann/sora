@@ -701,3 +701,8 @@ perspective: 600px;
     opacity: 1;
     top: calc(50% - 30px);
   }
+
+#serviceplan p{
+    padding: 5px 30px;
+    font-size: 16px;
+}
