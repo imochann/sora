@@ -135,6 +135,11 @@ strong{
     color: blue;
 }
 
+.rightxt {
+    flex-grow: 1;
+    padding-left: 200px;
+}
+
 .swiper-container{
     padding: 30px 0 50px;
     background: #eeeeee;
