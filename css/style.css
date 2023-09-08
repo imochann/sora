@@ -67,7 +67,6 @@ header li{
     margin-top: 40px;
     margin-left: 10px;
     font-size: 16px;
-    font-weight: 500;
     list-style-type: none;
     }
 
@@ -81,7 +80,7 @@ header nav a{
     height: 48px;
     width: auto;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 200;
 }
 
 header nav a:hover {
@@ -95,12 +94,8 @@ header nav a:hover {
     font-weight: 700;
     margin-bottom: 20px;
     padding: 15px;
-    text-shadow: 2px 2px 2px orangered;
 }
 
-strong{
-     background-image: linear-gradient(180deg, transparent 0%, whitesmoke 40%, skyblue 70%, skyblue 70%);                                                                                                                
-    }
 
   
 
@@ -114,11 +109,49 @@ strong{
     line-height: 2;
     margin-bottom: 60px;
 }
+
+#key_visual{
+    position: relative;
+    margin-top: 95px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+#key_visual .logo1{
+    position: absolute;
+    /* background-color: #D70100; */
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+#key_visual p{
+    position: absolute;
+    color: #ffffff;
+    width: 80%;
+    max-width: 1900px;
+    font-size: 45px;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px #000000 ;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 10rem;
+    z-index: 1;
+
+}
+
+
 #concept{
     border: #000000 solid 2px;
     width: 100%;
 }
 
+#concept p{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
 #concept ul{
     margin-bottom: 60px;
@@ -183,7 +216,6 @@ margin-bottom: 60px;
         font-size: 30px;
         font-weight: 500;
         margin-bottom: 20px;
-        text-shadow: 2px 2px 2px yellow;
     }
 #survice h4{
 font-size: 30px;
@@ -243,7 +275,6 @@ margin-bottom: 16px;
 }
 
 .facility  {
-    background-color: #f5deb3;
     padding: 40px;
  }
 
@@ -290,7 +321,9 @@ margin-bottom: 16px;
 .facility .sub:hover img , .sub2:hover img {
     transform: scale(1.1); 
 }
-
+#job_information p{
+    font-size: 50px;
+}
 #job_information dd{
     width: 30%;
     font-weight: 700;
@@ -356,36 +389,6 @@ margin-bottom: 16px;
     margin-bottom: 60px;
 }
 
-#key_visual{
-    position: relative;
-    margin-top: 95px;
-    margin-bottom: 60px;
-    width: 100%;
-}
-
-#key_visual .logo1{
-    position: absolute;
-    /* background-color: #D70100; */
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
-#key_visual p{
-    position: absolute;
-    color: aqua;
-    width: 80%;
-    max-width: 1900px;
-    font-size: 30px;
-    font-weight: 800;
-    text-shadow: 2px 2px 2px #000000 ;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 5rem;
-    z-index: 1;
-
-}
 
 .slider img{
     width: 100%;
@@ -523,25 +526,25 @@ perspective: 600px;
     max-width: 800px;
     margin: auto;
     border-collapse: collapse;
-    border: 1px solid #444;
+    border: 1px solid #000000;
 }
 #companny tr{
     font-weight: 500;
 }
 #companny th {
-    color: #fff;
+    color: #000000;
     padding: 10px;
     width: 300px;
     font-weight: 700;
-    background-color: #2980b9; /* Warna latar belakang header */
-    border: 1px solid #444;
+    
+    border: 1px solid #000000;
 }
 
 #companny td {
     padding: 10px;
     width: 500px;
-    background-color: #ecf0f1; /* Warna latar belakang sel */
-    border: 1px solid #444;
+    background-color: #ffffff; /* Warna latar belakang sel */
+    border: 1px solid #000000;
 }
 
 #back-to-top {
@@ -556,7 +559,7 @@ perspective: 600px;
 /* Q&A */
 .faq {
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     border-radius: 5px;
     overflow: hidden;
   }
