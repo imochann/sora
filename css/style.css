@@ -7,9 +7,23 @@
  html{
     font-family: 'Noto Sans JP', sans-serif;
  }
-
-
-
+ .column{
+    text-align: center;
+    position: relative;
+ }
+ 
+ .column .wf-hannari {
+     font-family: "Hannari";
+     font-size: 10rem;
+     margin-bottom: 30px;
+ }
+ .column p{
+    position: absolute;
+    top:500px;
+    right: 550px;
+    color: #ffffff;
+    text-shadow: #000000;
+ }
 .a{
     background-color: whitesmoke;
 }
