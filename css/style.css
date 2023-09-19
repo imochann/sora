@@ -7,23 +7,6 @@
  html{
     font-family: 'Noto Sans JP', sans-serif;
  }
- .column{
-    text-align: center;
-    position: relative;
- }
- 
- .column .wf-hannari {
-     font-family: "Hannari";
-     font-size: 10rem;
-     margin-bottom: 30px;
- }
- .column p{
-    position: absolute;
-    top:500px;
-    right: 550px;
-    color: #ffffff;
-    text-shadow: #000000;
- }
 .a{
     background-color: whitesmoke;
 }
@@ -253,6 +236,31 @@ margin-bottom: 16px;
     width: 30%;
 
 }
+
+.column{
+    text-align: center;
+    position: relative;
+ }
+ 
+ .column .wf-hannari {
+     font-family: "Hannari";
+     font-size: 10rem;
+     margin-bottom: 30px;
+ }
+
+ .column img{
+
+ }
+ .column p{
+    font-size: 20px;
+    position: absolute;
+    top:500px;
+    left: 500px;
+    line-height: 40px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000 ;
+ }
+
 
 #guide img{
     padding: 40px;
