@@ -24,13 +24,6 @@
     position: relative;
 }
 
-.container2 {
-    width: 80%;
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
-
 .flex{
     display: flex;
     justify-content: space-between;
@@ -246,14 +239,6 @@ margin-bottom: 16px;
     width: 30%;
 
 }
-/* 
-.detail{
-    width: 400px;
-    vertical-align: middle;        
-} */
-
-
-
 
 #guide img{
     padding: 40px;
@@ -290,24 +275,6 @@ margin-bottom: 16px;
     height: 400px;    
 }
 
-.facility .sub img{
-    width: 180px;
-    height: 100px;
-    transition: transform 0.3s; 
-    border-radius: 50%;  
-}
-
-.facility .sub2 img{
-    width: 250px;
-    height: 140px;
-    transition: transform 0.3s; 
-    border-radius: 200px 180px 105px 55px; 
-}
-
-
-.facility .sub:hover img , .sub2:hover img {
-    transform: scale(1.1); 
-}
 #job_information p{
     font-size: 50px;
 }
