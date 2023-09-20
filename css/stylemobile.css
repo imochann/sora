@@ -10,26 +10,27 @@
     /* Tampilan menu dropdown untuk smartphone (lebar layar < 768px) */
     @media (max-width: 767px) {
         .logo_main{
-            width: 45px;
-            height: 57px;
+            width: 40px;
+            height: 53px;
         }
 
         .logo_center{
             margin-bottom: 17px;
-            width: 210px;
-            height: 30px;
+            width: 190px;
+            height: 27px;
         }
 
         #menu-toggle {
             display: block; /* Tampilkan tombol menu hamburger */
             position: absolute;
-            top: 20px;
-            right: 10px;
+            top: 10px;
+            right: 0px;
             z-index: 99;
             background: whitesmoke;
-            width: 50px;
-            height: 50px;
-            border: 1px solid black;
+            width: 40px;
+            height: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
             text-align: center;
             font-size: 24px;
             cursor: pointer;
@@ -38,11 +39,11 @@
         #nav-menu {
             display: none; /* Sembunyikan menu saat tampilan smartphone */
             position: absolute;
-            top: 60px; /* Sesuaikan sesuai dengan tinggi header */
-            right: 10px;
-            background-color: #f4f4f4;
+            top: 45px; /* Sesuaikan sesuai dengan tinggi header */
+            right: 0px;
+            background-color: whitesmoke;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            padding: 10px;
+            padding: 5px;
             z-index: 100;
             border-radius: 5px;
             text-align: center;
@@ -117,17 +118,6 @@
         #footer .footer-links ul a {
             font-size: 10px; /* Menyesuaikan ukuran font tautan pada perangkat seluler */
         }
-    
-        #footer .social-links {
-            margin-top: 10px; /* Tambahkan sedikit ruang di atas ikon sosial pada perangkat seluler */
-        }
-    
-        #footer .social-links a {
-            font-size: 12px; /* Menyesuaikan ukuran ikon sosial pada perangkat seluler */
-            width: 18px;
-            height: 18px;
-            line-height: 18px; /* Pusatkan ikon sosial secara vertikal pada perangkat seluler */
-        }
 
         .column .wf-hannari {
             font-size: 8vw;
@@ -138,5 +128,10 @@
             top: 60%;
             left: 20%;
          }
+
+         .gmaps{
+            width: 400px;
+            height: 300px;
+        }
 
     }

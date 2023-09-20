@@ -518,3 +518,8 @@ margin-bottom: 16px;
     padding: 5px 30px;
     font-size: 16px;
 }
+
+.gmaps{
+    width: 800px;
+    height: 600px;
+}
