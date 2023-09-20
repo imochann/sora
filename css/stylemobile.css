@@ -35,9 +35,16 @@
             font-size: 24px;
             cursor: pointer;
         }
+
+        #menu-toggle:hover {
+            color: #1074bc;
+            border-top: 2px solid #1074bc;
+            border-right: 2px solid #1074bc;
+            transition: 0.3s;
+        }
     
         #nav-menu {
-            display: none; /* Sembunyikan menu saat tampilan smartphone */
+            /* display: none; Sembunyikan menu saat tampilan smartphone */
             position: absolute;
             top: 45px;
             background-color: whitesmoke;
@@ -46,8 +53,9 @@
             z-index: 100;
             border-radius: 5px;
             text-align: center;
+            opacity: 0; /* Awalnya, set opasitas ke 0 untuk menyembunyikan menu */
             transform: translateX(100%); /* Mulai dengan posisi di luar tampilan */
-            transition: transform 0.4s ease-in-out; /* Animasi perpindahan dengan efek ease-in-out selama 0.4 detik */
+            transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out; 
         }
     
         #nav-menu ul {
@@ -61,7 +69,8 @@
     
         /* Tampilkan menu saat tombol menu hamburger diklik */
         #menu-toggle.active + #nav-menu {
-            display: block;
+            /* display: block; */
+            opacity: 1; /* Saat aktif, set opasitas ke 1 untuk menampilkan menu */
             transform: translateX(0); /* Geser menu ke posisi yang benar saat aktif */
         }
 
