@@ -81,4 +81,40 @@
             font-size: 16px; /* Mengurangi ukuran font pada perangkat seluler */
         }
 
+        #footer {
+            padding: 20px 0; /* Mengurangi padding pada perangkat seluler */
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+    
+        #footer table {
+            width: 90%; /* Menyesuaikan lebar tabel pada perangkat seluler */
+        }
+    
+        #footer td {
+            padding: 5px;
+            width: 25%; /* Menyesuaikan lebar sel-sel pada perangkat seluler */
+        }
+    
+        #footer h4 {
+            margin-left: -10px;
+            font-size: 14px; /* Mengurangi ukuran font judul pada perangkat seluler */
+        }
+    
+        #footer .footer-links ul a {
+            font-size: 10px; /* Menyesuaikan ukuran font tautan pada perangkat seluler */
+        }
+    
+        #footer .social-links {
+            margin-top: 10px; /* Tambahkan sedikit ruang di atas ikon sosial pada perangkat seluler */
+        }
+    
+        #footer .social-links a {
+            font-size: 12px; /* Menyesuaikan ukuran ikon sosial pada perangkat seluler */
+            width: 18px;
+            height: 18px;
+            line-height: 18px; /* Pusatkan ikon sosial secara vertikal pada perangkat seluler */
+        }
+
     }
