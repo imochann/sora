@@ -110,11 +110,13 @@ header nav a:hover {
 }
 
 #key_visual .logo1{
+    font-size: 80px;
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    color: #ffffff;
 }
 
 #concept{
