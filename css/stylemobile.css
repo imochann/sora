@@ -39,14 +39,15 @@
         #nav-menu {
             display: none; /* Sembunyikan menu saat tampilan smartphone */
             position: absolute;
-            top: 45px; /* Sesuaikan sesuai dengan tinggi header */
-            right: 0px;
+            top: 45px;
             background-color: whitesmoke;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             padding: 5px;
             z-index: 100;
             border-radius: 5px;
             text-align: center;
+            transform: translateX(100%); /* Mulai dengan posisi di luar tampilan */
+            transition: transform 0.4s ease-in-out; /* Animasi perpindahan dengan efek ease-in-out selama 0.4 detik */
         }
     
         #nav-menu ul {
@@ -61,6 +62,7 @@
         /* Tampilkan menu saat tombol menu hamburger diklik */
         #menu-toggle.active + #nav-menu {
             display: block;
+            transform: translateX(0); /* Geser menu ke posisi yang benar saat aktif */
         }
 
         .title{
@@ -163,6 +165,12 @@
          .gmaps{
             width: 350px;
             height: 300px;
+        }
+
+        #companny td {
+            padding: 10px;
+            line-height: 15px;
+            font-size: small;
         }
 
     }
