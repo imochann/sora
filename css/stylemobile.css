@@ -9,6 +9,12 @@
     
     /* Tampilan menu dropdown untuk smartphone (lebar layar < 768px) */
     @media (max-width: 767px) {
+        .logo_center{
+            margin-bottom: 17px;
+            width: 250px;
+            height: 38px;
+        }
+
         #menu-toggle {
             display: block; /* Tampilkan tombol menu hamburger */
             position: absolute;
@@ -116,5 +122,11 @@
             height: 18px;
             line-height: 18px; /* Pusatkan ikon sosial secara vertikal pada perangkat seluler */
         }
+
+        .column p{
+            font-size: 10px;
+            line-height: 20px;
+            top: 80%;
+         }
 
     }

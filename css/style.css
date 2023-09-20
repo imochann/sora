@@ -34,9 +34,8 @@
 }
 .logo_center{
     margin-bottom: 17px;
-}
-.logo img{
-    display: inline-block;
+    width: 265px;
+    height: 41px;
 }
 
 header{
@@ -248,9 +247,9 @@ margin-bottom: 16px;
  .column p{
     font-size: 20px;
     position: absolute;
-    top:500px;
-    left: 500px;
     line-height: 40px;
+    top: 60%;
+    left: 25%;
     color: #ffffff;
     text-shadow: 2px 2px 2px #000000 ;
  }
