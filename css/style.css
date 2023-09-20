@@ -150,29 +150,33 @@ header nav a:hover {
 }
 
 #concept p{
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.title2{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.text1{
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
 #concept ul{
     margin-bottom: 60px;
     width: 50%;
+    font-weight: 10px;
     display: inline;
 }
 
 #concept li{
     font-size: 27px;
-    font-weight: 500;
 }
 
 #concept li span{
     color: blue;
-}
-
-.rightxt {
-    flex-grow: 1;
-    padding-left: 200px;
 }
 
 .swiper-container{
