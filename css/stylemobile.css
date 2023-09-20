@@ -9,19 +9,24 @@
     
     /* Tampilan menu dropdown untuk smartphone (lebar layar < 768px) */
     @media (max-width: 767px) {
+        .logo_main{
+            width: 45px;
+            height: 57px;
+        }
+
         .logo_center{
             margin-bottom: 17px;
-            width: 250px;
-            height: 38px;
+            width: 210px;
+            height: 30px;
         }
 
         #menu-toggle {
             display: block; /* Tampilkan tombol menu hamburger */
             position: absolute;
-            top: 30px;
+            top: 20px;
             right: 10px;
-            z-index: 999;
-            background: transparent;
+            z-index: 99;
+            background: whitesmoke;
             width: 50px;
             height: 50px;
             border: 1px solid black;
@@ -38,6 +43,7 @@
             background-color: #f4f4f4;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             padding: 10px;
+            z-index: 100;
             border-radius: 5px;
             text-align: center;
         }
@@ -123,10 +129,14 @@
             line-height: 18px; /* Pusatkan ikon sosial secara vertikal pada perangkat seluler */
         }
 
+        .column .wf-hannari {
+            font-size: 8vw;
+        }
+
         .column p{
-            font-size: 10px;
-            line-height: 20px;
-            top: 80%;
+            font-size: 2vw;
+            top: 60%;
+            left: 20%;
          }
 
     }
