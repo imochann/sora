@@ -119,9 +119,14 @@ header nav a:hover {
     width: 100%;
 }
 
+#key_visual .main_image img{
+    margin-top: -600px;
+    width: 100%;
+}
+
 #key_visual .logo1{
     position: absolute;
-    top: 80%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -335,14 +340,15 @@ margin-bottom: 16px;
     padding: 10px;
     width: 300px;
     font-weight: 700;
-    
+    background-color: whitesmoke;
     border: 1px solid #000000;
 }
 
 #companny td {
     padding: 10px;
+    line-height: 30px;
     width: 500px;
-    background-color: #ffffff; /* Warna latar belakang sel */
+    background-color: #ffffff; 
     border: 1px solid #000000;
 }
 
