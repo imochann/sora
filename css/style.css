@@ -114,13 +114,15 @@ header nav a:hover {
 
 #key_visual{
     position: relative;
-    margin-top: 95px;
-    margin-bottom: 60px;
     width: 100%;
+    max-width: 2200px;
+    min-height: 300px;
+    margin: 0 auto;
+    margin-bottom: 60px;
 }
 
 #key_visual .main_image img{
-    margin-top: -600px;
+    margin-top: -30%;
     width: 100%;
 }
 
@@ -131,23 +133,6 @@ header nav a:hover {
     transform: translate(-50%, -50%);
     z-index: 2;
 }
-
-#key_visual p{
-    position: absolute;
-    color: #ffffff;
-    width: 80%;
-    max-width: 1900px;
-    font-size: 45px;
-    font-weight: 800;
-    text-shadow: 2px 2px 2px #000000 ;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 10rem;
-    z-index: 1;
-
-}
-
 
 #concept{
     border: #000000 solid 2px;
