@@ -29,7 +29,8 @@
                 <img src="images/Logo_02.png" class="logo_center" alt="logo0" width="265px" height="41px">
                 </a>
             </div>
-            <nav>
+            <button id="menu-toggle" class="menu-icon">&#9776;</button> <!-- Dropdown Mobile menu -->
+            <nav id="nav-menu">
                 <ul class="flex">
                     <li><a href="#concept">ご挨拶</a></li><li>|</li>
                     <li><a href="#survice">施設案内</a></li><li>|</li>
@@ -636,5 +637,12 @@
         });
      </script>
      <script>AOS.init();</script>
+     <script>
+        $(document).ready(function () {
+                $("#menu-toggle").click(function () {
+                $(this).toggleClass("active");
+            });
+        });
+    </script>
 </body>
 </html>

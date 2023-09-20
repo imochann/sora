@@ -1,198 +1,84 @@
 /* Gaya untuk smartphone (lebar layar kurang dari 768px) */
-@media (max-width: 767px) {
-    .column .wf-hannari {
-        font-size: 5rem; /* Mengurangi ukuran font judul */
-        margin-bottom: 10px;
+    #menu-toggle {
+        display: none; /* Sembunyikan tombol menu hamburger secara default */
     }
+    
+    #nav-menu {
+        display: block; /* Tampilkan menu secara default */
+    }
+    
+    /* Tampilan menu dropdown untuk smartphone (lebar layar < 768px) */
+    @media (max-width: 767px) {
+        #menu-toggle {
+            display: block; /* Tampilkan tombol menu hamburger */
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            z-index: 999;
+            background: transparent;
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    
+        #nav-menu {
+            display: none; /* Sembunyikan menu saat tampilan smartphone */
+            position: absolute;
+            top: 60px; /* Sesuaikan sesuai dengan tinggi header */
+            right: 10px;
+            background-color: #f4f4f4;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    
+        #nav-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        #nav-menu ul li {
+            margin: 10px 0;
+        }
+    
+        /* Tampilkan menu saat tombol menu hamburger diklik */
+        #menu-toggle.active + #nav-menu {
+            display: block;
+        }
 
-    .column p {
-        position: static;
-        top: auto;
-        right: auto;
-        text-align: center; /* Mengatur teks menjadi tengah */
-        color: #000; /* Warna teks diubah ke hitam */
-        text-shadow: none; /* Hapus efek shadow teks */
-    }
+        .facility {
+            padding: 20px; /* Mengurangi padding pada perangkat seluler */
+        }
+    
+        .facility table tr td table tr td {
+            padding: 8px 20px; /* Mengurangi padding pada perangkat seluler */
+            font-size: 10px; /* Mengurangi ukuran font pada perangkat seluler */
+        }
+    
+        .facility .textarea1, .facility .textarea2 {
+            width: 40%; /* Menyesuaikan lebar textarea pada perangkat seluler */
+        }
+    
+        .facility .main {
+            padding: 0 20px; /* Mengurangi padding pada perangkat seluler */
+        }
+    
+        .facility .main img {
+            width: 100%; /* Menyesuaikan lebar gambar pada perangkat seluler */
+            height: auto; /* Menyesuaikan tinggi gambar secara otomatis */
+        }
+    
+        .zoom_item {
+            width: 100%; /* Menyesuaikan lebar zoom_item pada perangkat seluler */
+            height: auto; /* Menyesuaikan tinggi zoom_item secara otomatis */
+        }
+    
+        .zoom_item .zoom_item-info a {
+            font-size: 16px; /* Mengurangi ukuran font pada perangkat seluler */
+        }
 
-    header li {
-        margin-top: 20px; /* Mengurangi jarak atas antar tautan header */
-        margin-left: 0; /* Menghilangkan margin kiri pada tautan header */
-        font-size: 16px;
     }
-
-    /* Ubah padding header untuk smartphone */
-    header {
-        padding: 10px 0;
-    }
-
-    /* Ubah ukuran font pada judul */
-    .title {
-        font-size: 30px;
-        margin-bottom: 10px;
-    }
-
-    /* Ubah ukuran font pada teks */
-    .text {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    /* Ubah ukuran font pada teks 2 */
-    .text-2 {
-        font-size: 16px;
-        margin-bottom: 30px;
-    }
-
-    /* Sesuaikan margin pada elemen key visual */
-    #key_visual {
-        margin-bottom: 30px;
-    }
-
-    /* Sesuaikan tata letak logo pada key visual */
-    #key_visual .logo1 {
-        top: 40%; /* Sesuaikan posisi vertikal logo */
-        font-size: 24px; /* Ubah ukuran font logo */
-    }
-
-    /* Sesuaikan tata letak konten pada bagian concept */
-    #concept p {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-
-    /* Ubah ukuran font pada judul 2 */
-    .title2 {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    /* Ubah ukuran font pada teks 1 */
-    .text1 {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    /* Sesuaikan margin pada elemen concept ul */
-    #concept ul {
-        margin-bottom: 30px;
-    }
-
-    /* Ubah ukuran font pada elemen concept li */
-    #concept li {
-        font-size: 20px;
-    }
-
-    /* Sesuaikan margin pada elemen service */
-    #survice {
-        margin-bottom: 30px;
-    }
-
-    /* Ubah ukuran font pada elemen service h2 */
-    #survice h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    /* Ubah ukuran font pada elemen service h3 */
-    #survice h3 {
-        font-size: 24px;
-        font-weight: 500;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    /* Ubah ukuran font pada elemen service h4 */
-    #survice h4 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    /* Sesuaikan margin pada elemen service dl */
-    #survice dl {
-        margin-bottom: 30px;
-    }
-
-    /* Ubah ukuran font pada elemen service dd */
-    #survice dd {
-        font-size: 18px;
-    }
-
-    /* Ubah ukuran font pada elemen service dt */
-    #survice dt {
-        font-size: 18px;
-    }
-
-    /* Sesuaikan margin pada elemen guide img */
-    #guide img {
-        margin: 20px 0;
-        width: 120px;
-        height: 120px;
-    }
-
-    /* Sesuaikan margin pada elemen facility */
-    .facility {
-        padding: 20px;
-    }
-
-    /* Sesuaikan ukuran font pada elemen job_information p */
-    #job_information p {
-        font-size: 24px;
-    }
-
-    /* Sesuaikan ukuran font pada elemen job_information dd */
-    #job_information dd {
-        font-size: 16px;
-    }
-
-    /* Sesuaikan ukuran font pada elemen job_information dt */
-    #job_information dt {
-        font-size: 20px;
-    }
-
-    /* Sesuaikan margin pada elemen job_information dl */
-    #job_information dl {
-        margin-bottom: 30px;
-    }
-
-    /* Sesuaikan margin pada elemen companny table */
-    #companny table {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    /* Sesuaikan padding pada elemen companny th */
-    #companny th {
-        padding: 10px;
-        width: auto;
-    }
-
-    /* Sesuaikan padding pada elemen companny td */
-    #companny td {
-        padding: 10px;
-        line-height: 24px;
-        width: auto;
-    }
-
-    /* Sesuaikan margin pada elemen footer p */
-    #footer p {
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    /* Sesuaikan padding pada elemen zoom_item */
-    .zoom_item {
-        width: 100%;
-        margin: 0 0 20px 0;
-    }
-
-    /* Sesuaikan padding pada elemen zoom_item img */
-    .zoom_item img {
-        width: 100%;
-    }
-
-    /* Sesuaikan margin pada elemen footer td */
-    #footer td {
-        padding: 10px;
-        width: 100%;
-    }
-}
