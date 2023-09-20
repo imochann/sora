@@ -97,35 +97,25 @@ header nav a:hover {
 
 #key_visual{
     position: relative;
-    margin-top: 95px;
+    width: 100%;
+    max-width: 2200px;
+    min-height: 300px;
+    margin: 0 auto;
     margin-bottom: 60px;
+}
+
+#key_visual .main_image img{
+    margin-top: -30%;
     width: 100%;
 }
 
 #key_visual .logo1{
     position: absolute;
-    top: 80%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
-
-#key_visual p{
-    position: absolute;
-    color: #ffffff;
-    width: 80%;
-    max-width: 1900px;
-    font-size: 45px;
-    font-weight: 800;
-    text-shadow: 2px 2px 2px #000000 ;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 10rem;
-    z-index: 1;
-
-}
-
 
 #concept{
     border: #000000 solid 2px;
@@ -133,29 +123,33 @@ header nav a:hover {
 }
 
 #concept p{
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.title2{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.text1{
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
 #concept ul{
     margin-bottom: 60px;
     width: 50%;
+    font-weight: 10px;
     display: inline;
 }
 
 #concept li{
     font-size: 27px;
-    font-weight: 500;
 }
 
 #concept li span{
     color: blue;
-}
-
-.rightxt {
-    flex-grow: 1;
-    padding-left: 200px;
 }
 
 .swiper-container{
@@ -339,14 +333,15 @@ margin-bottom: 16px;
     padding: 10px;
     width: 300px;
     font-weight: 700;
-    
+    background-color: whitesmoke;
     border: 1px solid #000000;
 }
 
 #companny td {
     padding: 10px;
+    line-height: 30px;
     width: 500px;
-    background-color: #ffffff; /* Warna latar belakang sel */
+    background-color: #ffffff; 
     border: 1px solid #000000;
 }
 
