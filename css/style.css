@@ -121,8 +121,11 @@ header nav a:hover {
 }
 
 #concept{
-    border: #000000 solid 2px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2); 
+    border: whitesmoke solid 2px;
     width: 100%;
+    /* background: linear-gradient(red 0%, orange 25%, yellow 50%, green 75%, blue 100%) */
+    background: linear-gradient(45deg, whitesmoke 50%, whitesmoke 75%,  green 100%)
 }
 
 #concept p{
@@ -238,6 +241,10 @@ margin-bottom: 16px;
     text-align: center;
     position: relative;
  }
+.column-1{
+    background: linear-gradient(white 25%, snow 50%, whitesmoke 75%,  gainsboro 100%)
+
+}
  
  .column .wf-hannari {
      font-family: "Hannari";
@@ -264,7 +271,7 @@ margin-bottom: 16px;
 
 .facility  {
     padding: 40px;
- }
+}
 
 .facility table tr td table tr td{
     padding: 8px 50px;
