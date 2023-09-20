@@ -36,13 +36,6 @@
             cursor: pointer;
         }
 
-        #menu-toggle:hover {
-            color: #1074bc;
-            border-top: 2px solid #1074bc;
-            border-right: 2px solid #1074bc;
-            transition: 0.3s;
-        }
-    
         #nav-menu {
             /* display: none; Sembunyikan menu saat tampilan smartphone */
             position: absolute;
