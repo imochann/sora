@@ -365,6 +365,7 @@ margin-bottom: 16px;
     display: none;
     cursor: pointer;
     text-decoration: none;
+    z-index: 99;
   }
 
 /* Q&A */
