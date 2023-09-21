@@ -640,6 +640,20 @@
             $("#menu-toggle").click(function () {
                 $(this).toggleClass("active");
             });
+
+            // event listener untuk klik di luar menu
+            $(document).on("click", function (e) {
+                if (!$(e.target).closest("#nav-menu").length && !$(e.target).is("#menu-toggle")) {
+                // Klik di luar menu atau bukan pada tombol toggle
+                $("#menu-toggle").removeClass("active");
+                }
+            });
+
+            //event listener untuk peristiwa scroll
+            $(window).scroll(function () {
+                $("#menu-toggle").removeClass("active");
+            });
+
         });
     </script>
 </body>
