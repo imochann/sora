@@ -32,11 +32,16 @@
     text-align: center;
     vertical-align: middle;
 }
+
+.logo_main{
+    width: 54px;
+    height: 69px;
+}
+
 .logo_center{
     margin-bottom: 17px;
-}
-.logo img{
-    display: inline-block;
+    width: 265px;
+    height: 41px;
 }
 
 header{
@@ -133,12 +138,7 @@ header nav a:hover {
     margin-bottom: 40px;
 }
 
-.title2{
-    font-size: 30px;
-    margin-bottom: 40px;
-}
-
-.text1{
+#concept .text1{
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -252,9 +252,9 @@ margin-bottom: 16px;
  .column p{
     font-size: 20px;
     position: absolute;
-    top:500px;
-    left: 500px;
     line-height: 40px;
+    top: 60%;
+    left: 25%;
     color: #ffffff;
     text-shadow: 2px 2px 2px #000000 ;
  }
@@ -516,4 +516,9 @@ margin-bottom: 16px;
 #serviceplan p{
     padding: 5px 30px;
     font-size: 16px;
+}
+
+.gmaps{
+    width: 800px;
+    height: 600px;
 }
