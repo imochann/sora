@@ -9,9 +9,7 @@
  }
 
 body{ 
-    background-image: url(images/bg.jpg);
-    background-size: cover; /* Untuk mengisi latar belakang dengan seluruh elemen body */
-    background-repeat: no-repeat; 
+    background-image: url(../images/bg.jpg);
 }
 
 /* .a{
@@ -367,6 +365,7 @@ margin-bottom: 16px;
     display: none;
     cursor: pointer;
     text-decoration: none;
+    z-index: 99;
   }
 
 /* Q&A */
