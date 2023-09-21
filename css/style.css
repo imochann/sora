@@ -238,13 +238,10 @@ margin-bottom: 16px;
 }
 
 .column{
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    position: relative;
+    position: relative; 
  }
-.column-1{
-    background: linear-gradient(white 25%, snow 50%, whitesmoke 75%,  gainsboro 100%)
-
-}
  
  .column .wf-hannari {
      font-family: "Hannari";
