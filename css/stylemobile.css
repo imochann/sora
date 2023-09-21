@@ -47,7 +47,7 @@
             border-radius: 5px;
             text-align: center;
             opacity: 0; /* Awalnya, set opasitas ke 0 untuk menyembunyikan menu */
-            transform: translateX(100%); /* Mulai dengan posisi di luar tampilan */
+            transform: translateY(-5px); /* Mulai dengan posisi di luar tampilan */
             transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out; 
         }
     
@@ -64,7 +64,7 @@
         #menu-toggle.active + #nav-menu {
             /* display: block; */
             opacity: 1; /* Saat aktif, set opasitas ke 1 untuk menampilkan menu */
-            transform: translateX(0); /* Geser menu ke posisi yang benar saat aktif */
+            transform: translateY(0); /* Geser menu ke posisi yang benar saat aktif */
         }
 
         .title{
@@ -130,7 +130,7 @@
         }
 
         #footer {
-            padding: 20px 0; /* Mengurangi padding pada perangkat seluler */
+            padding: 20px 0px; /* Mengurangi padding pada perangkat seluler */
             width: 100%;
             margin: 0 auto;
             position: relative;
@@ -141,8 +141,8 @@
         }
     
         #footer td {
-            padding: 5px;
-            width: 25%; /* Menyesuaikan lebar sel-sel pada perangkat seluler */
+            padding: 0px;
+            width: 20%; /* Menyesuaikan lebar sel-sel pada perangkat seluler */
         }
     
         #footer h4 {
@@ -154,10 +154,6 @@
             font-size: 10px; /* Menyesuaikan ukuran font tautan pada perangkat seluler */
         }
 
-        .column .wf-hannari {
-            font-size: 8vw;
-        }
-
         .column p{
             font-size: 3vw;
             top: 60%;
@@ -165,7 +161,8 @@
          }
 
          .gmaps{
-            width: 350px;
+            padding: 0;
+            width: 100%;
             height: 300px;
         }
 

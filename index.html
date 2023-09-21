@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="css/stylemobile.css" />
   
     <!-- Google font -->
-     <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     　<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
@@ -308,7 +307,7 @@
       </section>
       <section>
         <div class="column container">
-        <div class="wf-hannari">そらだより</div>
+        <div class="title">そらだより</div>
            
         <div class="column-1">
             <img src="images/taiyouto-aozora.jpg" alt="太陽と空" width="80%" height="50%">
@@ -641,6 +640,20 @@
             $("#menu-toggle").click(function () {
                 $(this).toggleClass("active");
             });
+
+            // event listener untuk klik di luar menu
+            $(document).on("click", function (e) {
+                if (!$(e.target).closest("#nav-menu").length && !$(e.target).is("#menu-toggle")) {
+                // Klik di luar menu atau bukan pada tombol toggle
+                $("#menu-toggle").removeClass("active");
+                }
+            });
+
+            //event listener untuk peristiwa scroll
+            $(window).scroll(function () {
+                $("#menu-toggle").removeClass("active");
+            });
+
         });
     </script>
 </body>
