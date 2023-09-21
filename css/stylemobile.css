@@ -142,7 +142,7 @@
     
         #footer td {
             padding: 5px;
-            width: 25%; /* Menyesuaikan lebar sel-sel pada perangkat seluler */
+            width: 20%; /* Menyesuaikan lebar sel-sel pada perangkat seluler */
         }
     
         #footer h4 {
@@ -152,10 +152,6 @@
     
         #footer .footer-links ul a {
             font-size: 10px; /* Menyesuaikan ukuran font tautan pada perangkat seluler */
-        }
-
-        .column .wf-hannari {
-            font-size: 8vw;
         }
 
         .column p{
