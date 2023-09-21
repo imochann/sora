@@ -130,7 +130,7 @@
         }
 
         #footer {
-            padding: 20px 0; /* Mengurangi padding pada perangkat seluler */
+            padding: 20px 0px; /* Mengurangi padding pada perangkat seluler */
             width: 100%;
             margin: 0 auto;
             position: relative;
@@ -141,7 +141,7 @@
         }
     
         #footer td {
-            padding: 5px;
+            padding: 0px;
             width: 20%; /* Menyesuaikan lebar sel-sel pada perangkat seluler */
         }
     
