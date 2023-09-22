@@ -105,7 +105,7 @@
         .facility table tr td table tr td {
             border: 1px blueviolet solid;
             padding: 2px;
-            font-size: 6vw; /* Mengurangi ukuran font pada perangkat seluler */
+            font-size: 3vw; /* Mengurangi ukuran font pada perangkat seluler */
         }
 
         .facility .tab02{
@@ -113,7 +113,7 @@
         }
 
         .facility .tab04{
-            font-size: 6vw;
+            font-size: 3vw;
         }
     
         .facility .textarea1, .facility .textarea2 {
