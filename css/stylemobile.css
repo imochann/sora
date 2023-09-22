@@ -103,7 +103,9 @@
         }
     
         .facility table tr td table tr td {
-            font-size: 1vw; /* Mengurangi ukuran font pada perangkat seluler */
+            border: 1px black;
+            padding: 2px;
+            font-size: 3vw; /* Mengurangi ukuran font pada perangkat seluler */
         }
 
         .facility .tab02{
