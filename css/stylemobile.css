@@ -66,13 +66,13 @@
             opacity: 1; /* Saat aktif, set opasitas ke 1 untuk menampilkan menu */
             transform: translateY(0); /* Geser menu ke posisi yang benar saat aktif */
         }
-
+        
         .title{
-            font-size: 20px;
+            font-size: 18px;
             margin-top: 10px;
-            padding: 10px;
+            padding: 5px;
         }
-
+        
         #key_visual .main_image img{
             width: 100%;
             height: 120vw;
@@ -103,7 +103,7 @@
         }
     
         .facility table tr td table tr td {
-            border: 1px red solid;
+            border: 1px black solid;
             padding: 2px;
             font-size: 2vw; /* Mengurangi ukuran font pada perangkat seluler */
         }
