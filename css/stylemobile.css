@@ -103,11 +103,15 @@
         }
     
         .facility table tr td table tr td {
-            font-size: 5px; /* Mengurangi ukuran font pada perangkat seluler */
+            font-size: 1vw; /* Mengurangi ukuran font pada perangkat seluler */
+        }
+
+        .facility .tab02{
+            width: 50%;
         }
 
         .facility .tab04{
-            font-size: 7px;
+            font-size: 5px;
         }
     
         .facility .textarea1, .facility .textarea2 {
