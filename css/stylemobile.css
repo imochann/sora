@@ -103,8 +103,11 @@
         }
     
         .facility table tr td table tr td {
-            padding: 8px 20px; /* Mengurangi padding pada perangkat seluler */
             font-size: 10px; /* Mengurangi ukuran font pada perangkat seluler */
+        }
+
+        .facility .tab04{
+            font-size: 15px;
         }
     
         .facility .textarea1, .facility .textarea2 {
