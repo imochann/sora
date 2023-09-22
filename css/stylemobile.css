@@ -99,13 +99,13 @@
         }
 
         .facility {
-            padding: 20px; /* Mengurangi padding pada perangkat seluler */
+            padding: 10px; /* Mengurangi padding pada perangkat seluler */
         }
     
         .facility table tr td table tr td {
-            border: 1px blueviolet solid;
+            border: 1px red solid;
             padding: 2px;
-            font-size: 3vw; /* Mengurangi ukuran font pada perangkat seluler */
+            font-size: 2vw; /* Mengurangi ukuran font pada perangkat seluler */
         }
 
         .facility .tab02{
@@ -113,7 +113,7 @@
         }
 
         .facility .tab04{
-            font-size: 3vw;
+            font-size: 2vw;
         }
     
         .facility .textarea1, .facility .textarea2 {
