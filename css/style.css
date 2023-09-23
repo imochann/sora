@@ -253,7 +253,7 @@ margin-bottom: 16px;
     text-align: center;
     position: relative;
     height: 40rem;
-    background: linear-gradient(45deg, whitesmoke 50%, whitesmoke 75%,  skyblue 100%)
+    background: linear-gradient(45deg, whitesmoke 50%, whitesmoke 75%,  pink 100%)
  }
 
  .column .text1{
@@ -261,6 +261,8 @@ margin-bottom: 16px;
     font-weight: 700;
     margin-bottom: 20px;
     padding: 15px;
+    color: skyblue;
+    text-shadow: 2px 2px 2px green;
 }
 
  .column p{
