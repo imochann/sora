@@ -8,16 +8,16 @@
     font-family: 'Noto Sans JP', sans-serif;
  }
 
-body{ 
-    /* background-image: url(../images/bg.jpg); */
-}
+/* body{ 
+    background-image: url(../images/bg.jpg);
+} */
 
-/* .a{
+.a{
     background-color: whitesmoke;
 }
 .b{
     background-color: white;
-} */
+}
 
 .color span:nth-child(1) {color: blue;}
 .color span:nth-child(2) {color: red;}
@@ -285,12 +285,27 @@ margin-bottom: 16px;
 }
 
 .facility table tr td table tr td{
-    padding: 8px 50px;
+    border: #000000 2px solid;
+    padding: 8px;
     font-size: 14px;
 }
 
-.facility table tr td table tr td p{
-    margin-left: -20px;
+.facility .tab01{
+    width: 20%;
+}
+.facility .tab02{
+    width: 40%;
+}
+.facility .tab03{
+    width: 15%;
+}
+.facility .tab04{
+    width: 5%;
+    font-size: 30px;
+    color: blue;
+    font-weight: bolder;
+    border-bottom: none;
+    border-top: none;
 }
 
 .facility .textarea1, #guide .textarea1{
