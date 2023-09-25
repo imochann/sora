@@ -310,7 +310,7 @@ margin-bottom: 16px;
     
  }
 
- .column .text1{
+ .column .text01{
     font-size: 55px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -341,7 +341,7 @@ margin-bottom: 16px;
 
 #job_information{
     border: #000000 solid 1px;
-    width: 500px;
+    width: 50%;
     margin: auto;
     text-align: center;
     /* background-color: skyblue; */
