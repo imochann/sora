@@ -220,5 +220,13 @@
             padding: 7px 25px;
             font-size: 10px;
           }
+        
+        #survice h3{
+            font-size: 15px;
+            font-weight: bolder;
+        }
+        #survice h2{
+            font-size: 20px;
+        }
 
     }
