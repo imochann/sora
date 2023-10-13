@@ -196,4 +196,41 @@
             font-size: small;
         }
 
+        .offer{
+            width: 80%;
+            height: 200px;
+        }
+
+        .offer img{
+            width: 132px;
+            height: 21px;
+        }
+
+        .offtext{
+            font-size: 10px;
+            left: 70%;
+            top: 10%;
+            width: 175px;
+            height: 225px;
+        }
+
+        .offbtn {
+            left: 75%;
+            bottom: 70px;
+            padding: 7px 25px;
+            font-size: 10px;
+          }
+        
+        #survice h3{
+            font-size: 15px;
+            font-weight: bolder;
+        }
+        #survice h2{
+            font-size: 20px;
+        }
+
+        #guide .textarea2{
+            font-size: 15px;
+        }
+
     }
