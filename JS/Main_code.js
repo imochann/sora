@@ -45,6 +45,10 @@ $(document).ready(function () {
   $('.slider').slick({
       arrows: true,
       dots: true,
+      autoplay: true,
+      autoplayspeed: 10000,
+      fade:true, 
+      cssEase:'linear',
   });
 
   // Sembunyikan semua slider kecuali yang pertama saat halaman dimuat
@@ -55,7 +59,9 @@ $(document).ready(function () {
       $('.slider').hide(); // Sembunyikan semua slider
       $('.slider' + sliderNumber).show();
       currentSlider = sliderNumber;
-      $('#slider-number').text('Slider ' + currentSlider + ' of 4'); // Perbarui teks slider-number
+      $('#slider-number').text('令和５年 ' + currentSlider + '月'); // Perbarui teks slider-number
+      $('#prev-month').text(currentSlider - 1); // Perbarui teks　month
+      $('#next-month').text(currentSlider + 1); // Perbarui teks　month
   }
 
   // Tampilkan slider pertama saat halaman dimuat

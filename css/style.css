@@ -361,6 +361,20 @@ margin-bottom: 16px;
     font-weight: 700;
   }
 
+#slider-number{
+    margin-left: 80%;
+    width: 200px;
+    font-size: 20px;
+    margin-bottom: -60px;
+    z-index: 1;
+}
+
+.month{
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+
 .slider{
     display: none;
 }
@@ -368,6 +382,13 @@ margin-bottom: 16px;
 .slider img{
     width: 100%;
     height: 600px;
+}
+
+.prev-sliders{
+    font-size: 5vw;
+}
+.next-sliders{
+    font-size: 5vw;
 }
 
 
