@@ -308,33 +308,31 @@ margin-bottom: 16px;
  .column .text01{
     font-size: 55px;
     font-weight: 700;
-    margin-bottom: 20px;
     padding: 65px 0;
     color: skyblue;
     text-shadow: 2px 2px 2px green;
-    position: absolute;
-    left: 400px;
-    z-index: 3;
+    position: relative;
+    z-index: 2;
 }
 .column .img{
-    position: absolute;
-    left: 30%;
+    position: relative;
+    bottom: 280px;
     transform: translateY(5%);
     z-index: 2;
 }
 
  .column p{
     font-size: 20px;
-    position: absolute;
+    position: relative;
     line-height: 40px;
-    top: 250px;
-    left: 25%;
+    top: 100px;
     color: #000000;
     text-shadow: 2px 2px 2px gray ;
  }
 
 /* Sora Slider */
 .slides {
+    margin-top: -200px;
     margin-bottom: 20px;
     overflow: hidden;
   }
@@ -365,13 +363,13 @@ margin-bottom: 16px;
     width: 300px;
     font-size: 25px;
     margin-bottom: -100px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .month{
     padding: 10px;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .slider{
