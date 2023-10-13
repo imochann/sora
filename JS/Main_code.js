@@ -17,6 +17,25 @@ faqs.forEach(faq => {
   question.addEventListener('click', toggleAnswer);
 });
 
+// Slider Funct
+const slides1 = document.querySelectorAll('.slides');
+
+function toggleSlidviewer() {
+  const slidviewer = this.nextElementSibling;
+  if (slidviewer.style.maxHeight) {
+    slidviewer.style.padding = '0px 10px 0px 20px'; // Menghapus padding saat elemen tertutup
+    slidviewer.style.maxHeight = null;
+  } else {
+    slidviewer.style.padding = '10px 10px 30px 20px'; // Menambahkan padding saat elemen terbuka
+    slidviewer.style.maxHeight = slidviewer.scrollHeight + 'px';
+  }
+}
+
+slides1.forEach(slides => {
+  const slidbtn = slides.querySelector('.slidbtn');
+  slidbtn.addEventListener('click', toggleSlidviewer);
+});
+
 // backToTopButton Function
 // Saat halaman dimuat, pasang event listener untuk mengontrol visibilitas tombol
 document.addEventListener('DOMContentLoaded', function() {
