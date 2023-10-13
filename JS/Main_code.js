@@ -36,6 +36,53 @@ slides1.forEach(slides => {
   slidbtn.addEventListener('click', toggleSlidviewer);
 });
 
+
+////////Slider Nav Func////////////////
+$(document).ready(function () {
+  var currentSlider = 1;
+
+  // Inisialisasi semua slider saat halaman dimuat
+  $('.slider').slick({
+      arrows: true,
+      dots: true,
+  });
+
+  // Sembunyikan semua slider kecuali yang pertama saat halaman dimuat
+  $('.slider:not(.slider1)').hide();
+
+  // Fungsi untuk menampilkan slider yang dipilih
+  function showSlider(sliderNumber) {
+      $('.slider').hide(); // Sembunyikan semua slider
+      $('.slider' + sliderNumber).show();
+      currentSlider = sliderNumber;
+      $('#slider-number').text('Slider ' + currentSlider + ' of 4'); // Perbarui teks slider-number
+  }
+
+  // Tampilkan slider pertama saat halaman dimuat
+  showSlider(1);
+
+  // Fungsi untuk navigasi ke slider selanjutnya
+  $('.next-sliders').click(function () {
+      currentSlider++;
+      if (currentSlider > 4) {
+          currentSlider = 1;
+      }
+      showSlider(currentSlider);
+  });
+
+  // Fungsi untuk navigasi ke slider sebelumnya
+  $('.prev-sliders').click(function () {
+      currentSlider--;
+      if (currentSlider < 1) {
+          currentSlider = 4;
+      }
+      showSlider(currentSlider);
+  });
+});
+
+////////Slider Nav Func////////////////
+
+
 // backToTopButton Function
 // Saat halaman dimuat, pasang event listener untuk mengontrol visibilitas tombol
 document.addEventListener('DOMContentLoaded', function() {

@@ -361,6 +361,10 @@ margin-bottom: 16px;
     font-weight: 700;
   }
 
+.slider{
+    display: none;
+}
+
 .slider img{
     width: 100%;
     height: 600px;
