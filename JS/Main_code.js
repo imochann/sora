@@ -23,12 +23,12 @@ const slides1 = document.querySelectorAll('.slides');
 function toggleSlidviewer() {
   const slidviewer = this.nextElementSibling;
   if (slidviewer.style.maxHeight) {
-    slidviewer.style.padding = '0px 10px 0px 20px'; // Menghapus padding saat elemen tertutup
+    slidviewer.style.padding = '0px'; // Menghapus padding saat elemen tertutup
     slidviewer.style.maxHeight = null;
     document.getElementById('slidbtntext').textContent = "詳しくはこちら"; // Perbarui teks button
     document.getElementById('slidarrow').textContent = "▼"; // Perbarui teks button dengan karakter Unicode
   } else {
-    slidviewer.style.padding = '10px 10px 30px 20px'; // Menambahkan padding saat elemen terbuka
+    slidviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
     slidviewer.style.maxHeight = slidviewer.scrollHeight + 'px';
     document.getElementById('slidbtntext').textContent = "閉じる ❌"; // Perbarui teks button
     document.getElementById('slidarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode

@@ -181,11 +181,11 @@
             margin-left: 65%;
             width: 100px;
             font-size: 15px;
-            margin-bottom: -70px;
+            padding: 50 0 0 0;
         }
         .slider img{
             width: 100%;
-            height: 250px;
+            height: 200px;
         }
         .prev-sliders{
             font-size: 6vw;
@@ -199,11 +199,14 @@
             left: -40px;
         }
         .slick-next {
-            right: 20px;
+            right: -40px;
         }
-        .slick-prev, .slick-next {
-            width: 5px;
-            height: 5px;
+        
+        .slick-prev:before,
+        .slick-next:before
+        {
+            font-size: 8vw;
+            opacity: .9;
         }
 
          .gmaps{

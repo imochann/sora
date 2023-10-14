@@ -53,7 +53,7 @@ header{
     width: 100%;
     background-color: whitesmoke;
     position: fixed;
-    z-index: 3;
+    z-index: 9999;
     top: 0;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
 }
@@ -351,9 +351,9 @@ margin-bottom: 16px;
   
 .slidviewer {
     max-height: 0;
-    /* overflow: hidden; */
+    width: 95%;
     padding: 0 10px;
-    margin-top: 20px;
+    margin: 0 auto;
     transition: max-height 0.4s ease-in-out;
     font-weight: 700;
   }
@@ -382,10 +382,12 @@ margin-bottom: 16px;
 }
 
 .prev-sliders{
-    font-size: 3vw;
+    font-size: 50px;
+    padding: 10px 0px;
 }
 .next-sliders{
-    font-size: 3vw;
+    font-size: 50px;
+    padding: 20px 0px;
 }
 
 
