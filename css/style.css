@@ -358,37 +358,15 @@ margin-bottom: 16px;
     font-weight: 700;
   }
 
-#slider-number{
-    margin-left: 75%;
-    width: 300px;
-    font-size: 25px;
-    margin-bottom: -100px;
-    z-index: 2;
-}
-
-.month{
-    padding: 10px;
-    text-align: center;
-    font-size: 35px;
-}
-
-.slider{
+/* .slider{
     display: none;
-}
+} */
 
-.slider img{
+.slider1 img{
     width: 100%;
     height: 600px;
 }
 
-.prev-sliders{
-    font-size: 50px;
-    padding: 10px 0px;
-}
-.next-sliders{
-    font-size: 50px;
-    padding: 20px 0px;
-}
 
 
 #job_information{
@@ -401,7 +379,8 @@ margin-bottom: 16px;
     background: linear-gradient(135deg, whitesmoke 10%, whitesmoke 50%, gray 100%)
 } 
 #job_information p{
-    font-size: 50px;
+    text-align: left;
+    font-size: 30px;
 }
 
 
