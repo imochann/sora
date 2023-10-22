@@ -177,22 +177,6 @@
             font-size: 3vw;
             top: 60%;
          }
-        #slider-number{
-            margin-left: 65%;
-            width: 100px;
-            font-size: 15px;
-            padding: 50 0 0 0;
-        }
-        .slider img{
-            width: 100%;
-            height: 200px;
-        }
-        .prev-sliders{
-            font-size: 6vw;
-        }
-        .next-sliders{
-            font-size: 6vw;
-        }
 
         /* slick Button Customize */
         .slick-prev {

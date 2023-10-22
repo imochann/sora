@@ -39,6 +39,32 @@ slides1.forEach(slides => {
   const slidbtn = slides.querySelector('.slidbtn');
   slidbtn.addEventListener('click', toggleSlidviewer);
 });
+//Slider Func
+
+// GH cost Funct
+const ghcost1 = document.querySelectorAll('.ghcost');
+
+function toggleghcostviewer() {
+  const ghcostviewer = this.nextElementSibling;
+  if (ghcostviewer.style.maxHeight) {
+    ghcostviewer.style.padding = '0px'; // Menghapus padding saat elemen tertutup
+    ghcostviewer.style.maxHeight = null;
+    document.getElementById('ghbtntext').textContent = "詳しくはこちら"; // Perbarui teks button
+    document.getElementById('slidarrow').textContent = "▼"; // Perbarui teks button dengan karakter Unicode
+  } else {
+    ghcostviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
+    ghcostviewer.style.maxHeight = ghcostviewer.scrollHeight + 'px';
+    document.getElementById('ghbtntext').textContent = "閉じる ❌"; // Perbarui teks button
+    document.getElementById('slidarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
+  }
+}
+
+ghcost1.forEach(ghcost => {
+  const ghcostbtn = ghcost.querySelector('.ghcostbtn');
+  ghcostbtn.addEventListener('click', toggleghcostviewer);
+});
+//ghcost Func
+
 
 // backToTopButton Function
 // Saat halaman dimuat, pasang event listener untuk mengontrol visibilitas tombol

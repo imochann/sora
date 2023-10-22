@@ -108,10 +108,8 @@ header nav a:hover {
 #key_visual{
     position: relative;
     width: 100%;
-    max-width: 1050px;
-    max-height: 1000px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 #key_visual .main_image img{
@@ -273,14 +271,47 @@ margin-bottom: 16px;
     border-top: none;
 }
 
-.facility .main{
-    padding: 0 150px;
-}
-
 .facility .main img{
     width: 700px;
     height: 400px;    
 }
+
+/* GH Cost */
+.ghcost {
+    margin-top: -200px;
+    width: 115%;
+    overflow: hidden;
+    z-index: -2;
+  }
+.ghcostbtn {
+    position: relative;
+    left: 75%;
+    margin-bottom: 200px;
+  }
+
+#ghbtntext {
+    padding: 15px 60px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+#ghbtntext:hover {
+    background-color: #2980b9;
+  }
+  
+.ghcostviewer {
+    max-height: 0;
+    width: 95%;
+    padding: 0 10px;
+    margin: 0 auto;
+    transition: max-height 0.4s ease-in-out;
+    font-weight: 700;
+  }
+
 #guide{
     margin-bottom: 60px;
 }
@@ -600,12 +631,28 @@ margin-bottom: 16px;
     background-size: cover; /* atur ukuran gambar agar menutupi seluruh area */
     background-position: center; /* posisi gambar di tengah-tengah */
     background-repeat: no-repeat;
-    width: 100%;
+    width: 88%;
     height: 100%;
+    margin-bottom: 50px;
 }
 .offer img{
     width: 265px;
     height: 41px;
+}
+.offerGH{
+    background-image: linear-gradient(to right, transparent 40%, whitesmoke), url("../images/GH.jpg");
+    background-size: cover; /* atur ukuran gambar agar menutupi seluruh area */
+    background-position: center; /* posisi gambar di tengah-tengah */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+}
+.offer_title{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
 }
 .offtext{
     padding: 10px;
@@ -635,3 +682,4 @@ margin-bottom: 16px;
 .offbtn:hover {
     background-color: #2980b9;
   }
+
