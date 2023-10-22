@@ -664,47 +664,6 @@
     <script type="text/javascript" src="slick.js"></script>
     <script type="text/javascript" src="slick.min.js"></script>
     <script src="JS/Main_code.js"></script>
-    <script type="text/javascript">
-        $(document).on('ready', function(){
-        $(".slider1").slick({
-            arrows:true,
-            dots: true,
-            autoplay: true,
-            autoplayspeed: 10000,
-            fade:true, 
-            cssEase:'linear'
-        });
-        $(".slider2").slick({
-            arrows:false,
-            dots: true,
-            autoplay: true,
-            autoplayspeed: 10000,
-            fade:true, 
-            cssEase:'linear'
-        });
-        });
-     </script>
      <script>AOS.init();</script>
-     <script>
-        $(document).ready(function () {
-            $("#menu-toggle").click(function () {
-                $(this).toggleClass("active");
-            });
-
-            // event listener untuk klik di luar menu
-            $(document).on("click", function (e) {
-                if (!$(e.target).closest("#nav-menu").length && !$(e.target).is("#menu-toggle")) {
-                // Klik di luar menu atau bukan pada tombol toggle
-                $("#menu-toggle").removeClass("active");
-                }
-            });
-
-            //event listener untuk peristiwa scroll
-            $(window).scroll(function () {
-                $("#menu-toggle").removeClass("active");
-            });
-
-        });
-    </script>
 </body>
 </html>

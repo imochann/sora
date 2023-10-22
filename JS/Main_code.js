@@ -17,6 +17,48 @@ faqs.forEach(faq => {
   question.addEventListener('click', toggleAnswer);
 });
 
+//Document Initialize Slider , Mobile Menu
+$(document).on('ready', function(){
+
+  //Slider Initializer
+  $(".slider1").slick({
+      arrows:true,
+      dots: true,
+      autoplay: true,
+      autoplayspeed: 10000,
+      fade:true, 
+      cssEase:'linear'
+  });
+  $(".slider2").slick({
+      arrows:false,
+      dots: true,
+      autoplay: true,
+      autoplayspeed: 10000,
+      fade:true, 
+      cssEase:'linear'
+  });
+  //Slider Initializer
+
+  //Mobile Menu Initializer
+  $("#menu-toggle").click(function () {
+      $(this).toggleClass("active");
+    });
+    // event listener untuk klik di luar menu
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest("#nav-menu").length && !$(e.target).is("#menu-toggle")) {
+    // Klik di luar menu atau bukan pada tombol toggle
+      $("#menu-toggle").removeClass("active");
+      }
+    });
+    //event listener untuk peristiwa scroll
+  $(window).scroll(function () {
+      $("#menu-toggle").removeClass("active");
+    });
+  //Mobile Menu Initializer
+
+  });
+//Slider Initialize
+
 // Slider Funct
 const slides1 = document.querySelectorAll('.slides');
 
