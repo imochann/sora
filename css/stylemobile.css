@@ -83,16 +83,18 @@
             font-size: 30px;
             margin-bottom: 20px;
         }
-        
-        #concept .text1{
+        #concept li p{
             font-size: 14px;
+            padding-left: 40px;
+        }
+        
+        #concept span{
+            font-size: 28px;
             margin-bottom: 20px;
         }
         
         #concept ul{
             margin-bottom: 30px;
-            width: 90%;
-            font-weight: 10px;
         }
         
         #concept li{
@@ -118,7 +120,7 @@
           }
         .ghcostbtn {
             left: 50%;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
           }
         #ghbtntext {
             padding: 10px 40px;
