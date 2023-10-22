@@ -184,31 +184,28 @@
                                     </div>
                                 <br><br><br>
                     
-                        <h3 class="title">介護付きホームファミリー</h3>
-                        <table>
-                            <tr>
-                                <td colspan="3" class="main">
-                                  <h2>中央館</h2>
-                                    <div class="zoom_item">
-                                        <img src="images/chuokan.jpg" alt="bld">
-                                        <div class="zoom_item-info">
-                                            <a href="images/chuokan.jpg">≫もっと見る</a>
+                                    <div class="slider2">
+                                        <div>
+                                            <img src="images/chuokan.jpg" alt="スライドショー" >
+                                        </div>
+                                        <div>
+                                            <img src="images/nishikan.jpg" alt="スライドショー" >
+                                        </div>
+                                    </div> 
+                                    <div class="offerKan">
+                                        <div class="offtext">
+                                            <br><br><br><br><br>
+                                            <div class="offer_title">介護付きホームファミリー</div><br><br><br>
                                         </div>
                                     </div>
-                                    <h2>西館</h2>
-                                    <div class="zoom_item">
-                                        <img src="images/nishikan.jpg" alt="bld">
-                                        <div class="zoom_item-info">
-                                            <a href="images/nishikan.jpg">≫もっと見る</a>
-                                        </div>
-                                    </div>
-
-                                </td>   
-                            </tr>
-                            <tr>
-                                <td colspan="3">
-                                    介護付きホーム費用<hr><br>
-                                    <table>
+                                    <div class="ghcost ghcost2">
+                                        <button class="ghcostbtn center">
+                                            <div id="ghbtntext" style="margin-right: 5px;">詳しくはこちら</div>
+                                            <div id="slidarrow">▼</div>
+                                        </button>
+                                        <div class="ghcostviewer">
+                                            介護付きホーム費用<hr><br>
+                                            <table>
                                         <tr>
                                             <td class="tab01 center" rowspan="2"><p>夏季料金</p></td>
                                             <td class="tab04 center" rowspan="10">✙</td>
@@ -293,10 +290,10 @@
                                                 冬季暖房料+8,000
                                             </td>
                                         </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table><br><br><br>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
                     </div>
                     <br><br><br>
         </div>
@@ -649,6 +646,14 @@
         $(document).on('ready', function(){
         $(".slider1").slick({
             arrows:true,
+            dots: true,
+            autoplay: true,
+            autoplayspeed: 10000,
+            fade:true, 
+            cssEase:'linear'
+        });
+        $(".slider2").slick({
+            arrows:false,
             dots: true,
             autoplay: true,
             autoplayspeed: 10000,
