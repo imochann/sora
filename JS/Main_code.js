@@ -41,18 +41,33 @@ slides1.forEach(slides => {
 });
 
 
+//////Func Tahun Jepang
+function getJapaneseEraYear() {
+  // Definisikan tanggal dimulainya Era Reiwa
+  const reiwaStartDate = new Date('2019-05-01');
+  // Dapatkan tanggal saat ini
+  const currentDate = new Date();
+  // Hitung selisih tahun antara tanggal saat ini dan tanggal dimulainya Era Reiwa
+  const eraYear = currentDate.getFullYear() - reiwaStartDate.getFullYear() + 1;
+  return eraYear;
+}
+
 ////////Slider Nav Func////////////////
 $(document).ready(function () {
-  var currentSlider = 2;
+  const eraYear = getJapaneseEraYear();
+  const currentDate = new Date();
+  const currentMonth = currentDate.getMonth() + 1; // Dapatkan bulan saat ini (0-11), tambahkan 1 untuk mendapatkan format bulan yang sesuai
+  var currentSlider = currentMonth;
 
   // Inisialisasi semua slider saat halaman dimuat
   $('.slider').slick({
       arrows: true,
       dots: true,
-      autoplay: true,
+      autoplay: false,
       autoplayspeed: 10000,
       fade:true, 
       cssEase:'linear',
+      slickGoTo: 0, // 'slickGoTo' untuk tampilan awal ke gambar slide tertentu
   });
 
   // Sembunyikan semua slider kecuali yang pertama saat halaman dimuat
@@ -61,20 +76,26 @@ $(document).ready(function () {
   // Fungsi untuk menampilkan slider yang dipilih
   function showSlider(sliderNumber) {
       $('.slider').hide(); // Sembunyikan semua slider
-      $('.slider' + sliderNumber).show();
+      $('.slider' + sliderNumber).slick('slickGoTo', 6).slick('slickPlay').show(); // 'slickGoTo' tampilan awal ke gambar slide tertentu, 'slickPlay' ubah set Autoplay true 
       currentSlider = sliderNumber;
-      $('#slider-number').text('令和５年 ' + currentSlider + '月'); // Perbarui teks slider-number
+      $('#slider-number').text('令和 ' + eraYear + '年 ' + currentSlider + '月'); // Perbarui teks slider-number
       $('#prev-month').text((currentSlider - 1) + "月"); // Perbarui teks　month
       $('#next-month').text((currentSlider + 1) + "月"); // Perbarui teks　month
+      if (currentSlider == 12) {
+        $('#next-month').text('令和 ' + (eraYear + 1) + '年 ' + 1 + "月"); // Perbarui batas teks　month
+      }
+      else if (currentSlider == 1) {
+        $('#prev-month').text('令和 ' + (eraYear - 1) + '年 ' + 12 + "月"); // Perbarui batas teks　month
+      }
   }
 
   // Tampilkan slider pertama saat halaman dimuat
-  showSlider(1);
+  showSlider(currentSlider);
 
   // Fungsi untuk navigasi ke slider selanjutnya
   $('.next-sliders').click(function () {
       currentSlider++;
-      if (currentSlider > 6) {
+      if (currentSlider > 12) {
           currentSlider = 1;
       }
       showSlider(currentSlider);
@@ -84,7 +105,7 @@ $(document).ready(function () {
   $('.prev-sliders').click(function () {
       currentSlider--;
       if (currentSlider < 1) {
-          currentSlider = 6;
+          currentSlider = 12;
       }
       showSlider(currentSlider);
   });
