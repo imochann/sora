@@ -167,42 +167,6 @@ header nav a:hover {
     color: blue;
 }
 
-.swiper-container{
-    padding: 30px 0 50px;
-    background: #eeeeee;
-}
-.swiper-container img{
-    width: 500pt;
-    height: 300px;
-}
-.s-fade-wrap{
-    position: relative;
-    max-width: 640px;
-    margin: 0 auto;
-}
-
-.s-fade-text{
-    position: absolute;
-    top: 20%;
-    left: 0;
-    width: 100%;
-    color: #eeeeee;
-    font-size: 5vw;    
-}
-
-.swiper-slide-active .s-fade-text{
-    animation: slideTextFade 1.75s ease 0s normal;
-
-}
-
-@keyframes slideTextFade {
-    0%, 25% {
-        opacity: 0;
-}
-   100% {
-    opacity: 1;
-   }
-}
 #survice{
 margin-bottom: 60px;
     }
