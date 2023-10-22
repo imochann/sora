@@ -281,6 +281,11 @@
             font-size: 20px;
         }
 
+        #guide img{
+            padding: 10px;
+            width: 90px;
+            height: 90px;
+        }
         #guide .textarea2{
             font-size: 15px;
         }
