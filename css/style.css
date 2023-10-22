@@ -247,7 +247,7 @@ margin-bottom: 16px;
     padding: 40px;
 }
 
-.facility table tr td table tr td{
+.facility table tr td{
     border: #000000 2px solid;
     padding: 8px;
     font-size: 14px;
@@ -278,10 +278,19 @@ margin-bottom: 16px;
     overflow: hidden;
     z-index: -2;
   }
-.ghcost2 {
+.kancost2 {
     margin-top: -850px;
+    width: 115%;
+    overflow: hidden;
+    z-index: -2;
   }
 .ghcostbtn {
+    position: relative;
+    left: 75%;
+    margin-bottom: 200px;
+    z-index: 8;
+  }
+.kancostbtn {
     position: relative;
     left: 75%;
     margin-bottom: 200px;
@@ -301,8 +310,29 @@ margin-bottom: 16px;
 #ghbtntext:hover {
     background-color: #2980b9;
   }
+#kanbtntext {
+    padding: 15px 60px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+#kanbtntext:hover {
+    background-color: #2980b9;
+  }
   
 .ghcostviewer {
+    max-height: 0;
+    width: 95%;
+    padding: 0 10px;
+    margin: 0 auto;
+    transition: max-height 0.4s ease-in-out;
+    font-weight: 700;
+  }
+.kancostviewer {
     max-height: 0;
     width: 95%;
     padding: 0 10px;

@@ -50,12 +50,12 @@ function toggleghcostviewer() {
     ghcostviewer.style.padding = '0px'; // Menghapus padding saat elemen tertutup
     ghcostviewer.style.maxHeight = null;
     document.getElementById('ghbtntext').textContent = "詳しくはこちら"; // Perbarui teks button
-    document.getElementById('slidarrow').textContent = "▼"; // Perbarui teks button dengan karakter Unicode
+    document.getElementById('gharrow').textContent = "▼"; // Perbarui teks button dengan karakter Unicode
   } else {
     ghcostviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
     ghcostviewer.style.maxHeight = ghcostviewer.scrollHeight + 'px';
     document.getElementById('ghbtntext').textContent = "閉じる ❌"; // Perbarui teks button
-    document.getElementById('slidarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
+    document.getElementById('gharrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
   }
 }
 
@@ -64,6 +64,30 @@ ghcost1.forEach(ghcost => {
   ghcostbtn.addEventListener('click', toggleghcostviewer);
 });
 //ghcost Func
+
+// kan cost Funct
+const kancost1 = document.querySelectorAll('.kancost2');
+
+function togglekancostviewer() {
+  const kancostviewer = this.nextElementSibling;
+  if (kancostviewer.style.maxHeight) {
+    kancostviewer.style.padding = '0px'; // Menghapus padding saat elemen tertutup
+    kancostviewer.style.maxHeight = null;
+    document.getElementById('kanbtntext').textContent = "詳しくはこちら"; // Perbarui teks button
+    document.getElementById('kanarrow').textContent = "▼"; // Perbarui teks button dengan karakter Unicode
+  } else {
+    kancostviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
+    kancostviewer.style.maxHeight = kancostviewer.scrollHeight + 'px';
+    document.getElementById('kanbtntext').textContent = "閉じる ❌"; // Perbarui teks button
+    document.getElementById('kanarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
+  }
+}
+
+kancost1.forEach(kancost2 => {
+  const kancostbtn = kancost2.querySelector('.kancostbtn');
+  kancostbtn.addEventListener('click', togglekancostviewer);
+});
+//kancost Func
 
 
 // backToTopButton Function
