@@ -108,17 +108,14 @@ header nav a:hover {
 #key_visual{
     position: relative;
     width: 100%;
-    max-width: 1050px;
-    max-height: 1000px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 #key_visual .main_image img{
     margin-top: -30%;
     width: 100%;
     height: 70rem;
-
 }
 
 #key_visual .logo1{
@@ -141,23 +138,28 @@ header nav a:hover {
 }
 
 #concept p{
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 40px;
 }
 
-#concept .text1{
+#concept li p{
     font-size: 20px;
-    margin-bottom: 20px;
+    padding-left: 70px;
+    margin-bottom: 0px;
+}
+
+#concept span{
+    font-size: 40px;
 }
 
 #concept ul{
-    margin-bottom: 60px;
-    width: 50%;
+    width: 100%;
     font-weight: 10px;
     display: inline;
 }
 
 #concept li{
+    padding: 10px;
     font-size: 27px;
 }
 
@@ -165,42 +167,6 @@ header nav a:hover {
     color: blue;
 }
 
-.swiper-container{
-    padding: 30px 0 50px;
-    background: #eeeeee;
-}
-.swiper-container img{
-    width: 500pt;
-    height: 300px;
-}
-.s-fade-wrap{
-    position: relative;
-    max-width: 640px;
-    margin: 0 auto;
-}
-
-.s-fade-text{
-    position: absolute;
-    top: 20%;
-    left: 0;
-    width: 100%;
-    color: #eeeeee;
-    font-size: 5vw;    
-}
-
-.swiper-slide-active .s-fade-text{
-    animation: slideTextFade 1.75s ease 0s normal;
-
-}
-
-@keyframes slideTextFade {
-    0%, 25% {
-        opacity: 0;
-}
-   100% {
-    opacity: 1;
-   }
-}
 #survice{
 margin-bottom: 60px;
     }
@@ -249,7 +215,7 @@ margin-bottom: 16px;
     padding: 40px;
 }
 
-.facility table tr td table tr td{
+.facility table tr td{
     border: #000000 2px solid;
     padding: 8px;
     font-size: 14px;
@@ -273,14 +239,76 @@ margin-bottom: 16px;
     border-top: none;
 }
 
-.facility .main{
-    padding: 0 150px;
-}
+/* GH Cost */
+.ghcost {
+    margin-top: -200px;
+    width: 115%;
+    overflow: hidden;
+    z-index: -2;
+  }
+.kancost2 {
+    margin-top: -850px;
+    width: 115%;
+    overflow: hidden;
+    z-index: -2;
+  }
+.ghcostbtn {
+    position: relative;
+    left: 75%;
+    margin-bottom: 150px;
+    z-index: 8;
+  }
+.kancostbtn {
+    position: relative;
+    left: 75%;
+    margin-bottom: 200px;
+    z-index: 8;
+  }
 
-.facility .main img{
-    width: 700px;
-    height: 400px;    
-}
+#ghbtntext {
+    padding: 15px 60px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+#ghbtntext:hover {
+    background-color: #2980b9;
+  }
+#kanbtntext {
+    padding: 15px 60px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+#kanbtntext:hover {
+    background-color: #2980b9;
+  }
+  
+.ghcostviewer {
+    max-height: 0;
+    width: 95%;
+    padding: 0 10px;
+    margin: 0 auto;
+    transition: max-height 0.4s ease-in-out;
+    font-weight: 700;
+  }
+.kancostviewer {
+    max-height: 0;
+    width: 95%;
+    padding: 0 10px;
+    margin: 0 auto;
+    transition: max-height 0.4s ease-in-out;
+    font-weight: 700;
+  }
+
 #guide{
     margin-bottom: 60px;
 }
@@ -358,50 +386,27 @@ margin-bottom: 16px;
     font-weight: 700;
   }
 
-#slider-number{
-    margin-left: 75%;
-    width: 300px;
-    font-size: 25px;
-    margin-bottom: -100px;
-    z-index: 2;
-}
-
-.month{
-    padding: 10px;
-    text-align: center;
-    font-size: 35px;
-}
-
-.slider{
-    display: none;
-}
-
-.slider img{
+.slider1 img{
     width: 100%;
     height: 600px;
 }
-
-.prev-sliders{
-    font-size: 50px;
-    padding: 10px 0px;
-}
-.next-sliders{
-    font-size: 50px;
-    padding: 20px 0px;
+.slider2 img{
+    width: 100%;
+    height: 500px;
 }
 
 
-#job_information{
+
+.job_info{
     border: #000000 solid 1px;
-    width: 50%;
-    margin: auto;
     text-align: center;
-    
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
     background: linear-gradient(135deg, whitesmoke 10%, whitesmoke 50%, gray 100%)
 } 
-#job_information p{
-    font-size: 50px;
+.job_info p{
+    padding: 30px;
+    text-align: left;
+    font-size: 30px;
 }
 
 
@@ -561,50 +566,6 @@ margin-bottom: 16px;
     padding: 10px;
     width: 25%;
 }
-  
-.zoom_item {
-    background: #1e4356;
-    overflow: hidden;
-    width: 700px;
-    height: 400px;
-    position: relative;
-    border-radius: 4px;
-    margin: 0 0 30px 0;
-  }
-
-.zoom_item img {
-    transition: all 0.3s ease-in-out;
-  }
-
-.zoom_item .zoom_item-info {
-    opacity: 0;
-    position: absolute;
-    transition: all 0.3s linear;
-    text-align: center;
-    top: 10%;
-    left: 0;
-    right: 0;
-  }
-.zoom_item .zoom_item-info a {
-    font-size: 22px;
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-.zoom_item .zoom_item-info a:hover {
-    color: white;
-  }
-  
-.zoom_item:hover img {
-    opacity: 0.6;
-    transform: scale(1.1);
-  }
-  
-.zoom_item:hover .zoom_item-info {
-    opacity: 1;
-    top: calc(50% - 30px);
-  }
 
 #serviceplan p{
     padding: 5px 30px;
@@ -621,16 +582,47 @@ margin-bottom: 16px;
     background-size: cover; /* atur ukuran gambar agar menutupi seluruh area */
     background-position: center; /* posisi gambar di tengah-tengah */
     background-repeat: no-repeat;
-    width: 100%;
+    width: 88%;
     height: 100%;
+    margin-bottom: 50px;
 }
 .offer img{
     width: 265px;
     height: 41px;
 }
+.offerGH{
+    background-image: linear-gradient(to right, transparent 40%, whitesmoke), url("../images/GH.jpg");
+    background-size: cover; /* atur ukuran gambar agar menutupi seluruh area */
+    background-position: center; /* posisi gambar di tengah-tengah */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.offerKan{
+    position: relative;
+    top: -550px;
+    background-image: linear-gradient(to right, transparent 40%, whitesmoke);
+    background-size: cover; /* atur ukuran gambar agar menutupi seluruh area */
+    background-position: center; /* posisi gambar di tengah-tengah */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px;
+    margin-bottom: 50px;
+    z-index: 6;
+}
+
+.offer_title{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
 .offtext{
     padding: 10px;
     text-align: left;
+    text-shadow: -4px -4px 10px white, 4px -4px 10px white, -4px 4px 10px white, 4px 4px 10px white, 0 0 5px black;
     font-size: 18px;
     font-weight: 100;
     position: relative;
@@ -639,6 +631,7 @@ margin-bottom: 16px;
     width: 350px;
     height: 450px;
 }
+
 .offbtn {
     position: relative;
     left: 85%;
@@ -656,3 +649,4 @@ margin-bottom: 16px;
 .offbtn:hover {
     background-color: #2980b9;
   }
+

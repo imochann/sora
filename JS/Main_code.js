@@ -17,6 +17,48 @@ faqs.forEach(faq => {
   question.addEventListener('click', toggleAnswer);
 });
 
+//Document Initialize Slider , Mobile Menu
+$(document).on('ready', function(){
+
+  //Slider Initializer
+  $(".slider1").slick({
+      arrows:true,
+      dots: true,
+      autoplay: true,
+      autoplayspeed: 10000,
+      fade:true, 
+      cssEase:'linear'
+  });
+  $(".slider2").slick({
+      arrows:false,
+      dots: true,
+      autoplay: true,
+      autoplayspeed: 10000,
+      fade:true, 
+      cssEase:'linear'
+  });
+  //Slider Initializer
+
+  //Mobile Menu Initializer
+  $("#menu-toggle").click(function () {
+      $(this).toggleClass("active");
+    });
+    // event listener untuk klik di luar menu
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest("#nav-menu").length && !$(e.target).is("#menu-toggle")) {
+    // Klik di luar menu atau bukan pada tombol toggle
+      $("#menu-toggle").removeClass("active");
+      }
+    });
+    //event listener untuk peristiwa scroll
+  $(window).scroll(function () {
+      $("#menu-toggle").removeClass("active");
+    });
+  //Mobile Menu Initializer
+
+  });
+//Slider Initialize
+
 // Slider Funct
 const slides1 = document.querySelectorAll('.slides');
 
@@ -39,79 +81,55 @@ slides1.forEach(slides => {
   const slidbtn = slides.querySelector('.slidbtn');
   slidbtn.addEventListener('click', toggleSlidviewer);
 });
+//Slider Func
 
+// GH cost Funct
+const ghcost1 = document.querySelectorAll('.ghcost');
 
-//////Func Tahun Jepang
-function getJapaneseEraYear() {
-  // Definisikan tanggal dimulainya Era Reiwa
-  const reiwaStartDate = new Date('2019-05-01');
-  // Dapatkan tanggal saat ini
-  const currentDate = new Date();
-  // Hitung selisih tahun antara tanggal saat ini dan tanggal dimulainya Era Reiwa
-  const eraYear = currentDate.getFullYear() - reiwaStartDate.getFullYear() + 1;
-  return eraYear;
+function toggleghcostviewer() {
+  const ghcostviewer = this.nextElementSibling;
+  if (ghcostviewer.style.maxHeight) {
+    ghcostviewer.style.padding = '0px'; // Menghapus padding saat elemen tertutup
+    ghcostviewer.style.maxHeight = null;
+    document.getElementById('ghbtntext').textContent = "詳しくはこちら"; // Perbarui teks button
+    document.getElementById('gharrow').textContent = "▼"; // Perbarui teks button dengan karakter Unicode
+  } else {
+    ghcostviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
+    ghcostviewer.style.maxHeight = ghcostviewer.scrollHeight + 'px';
+    document.getElementById('ghbtntext').textContent = "閉じる ❌"; // Perbarui teks button
+    document.getElementById('gharrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
+  }
 }
 
-////////Slider Nav Func////////////////
-$(document).ready(function () {
-  const eraYear = getJapaneseEraYear();
-  const currentDate = new Date();
-  const currentMonth = currentDate.getMonth() + 1; // Dapatkan bulan saat ini (0-11), tambahkan 1 untuk mendapatkan format bulan yang sesuai
-  var currentSlider = currentMonth;
-
-  // Inisialisasi semua slider saat halaman dimuat
-  $('.slider').slick({
-      arrows: true,
-      dots: true,
-      autoplay: false,
-      autoplayspeed: 10000,
-      fade:true, 
-      cssEase:'linear',
-      slickGoTo: 0, // 'slickGoTo' untuk tampilan awal ke gambar slide tertentu
-  });
-
-  // Sembunyikan semua slider kecuali yang pertama saat halaman dimuat
-  $('.slider:not(.slider2)').hide();
-
-  // Fungsi untuk menampilkan slider yang dipilih
-  function showSlider(sliderNumber) {
-      $('.slider').hide(); // Sembunyikan semua slider
-      $('.slider' + sliderNumber).slick('slickGoTo', 6).slick('slickPlay').show(); // 'slickGoTo' tampilan awal ke gambar slide tertentu, 'slickPlay' ubah set Autoplay true 
-      currentSlider = sliderNumber;
-      $('#slider-number').text('令和 ' + eraYear + '年 ' + currentSlider + '月'); // Perbarui teks slider-number
-      $('#prev-month').text((currentSlider - 1) + "月"); // Perbarui teks　month
-      $('#next-month').text((currentSlider + 1) + "月"); // Perbarui teks　month
-      if (currentSlider == 12) {
-        $('#next-month').text('令和 ' + (eraYear + 1) + '年 ' + 1 + "月"); // Perbarui batas teks　month
-      }
-      else if (currentSlider == 1) {
-        $('#prev-month').text('令和 ' + (eraYear - 1) + '年 ' + 12 + "月"); // Perbarui batas teks　month
-      }
-  }
-
-  // Tampilkan slider pertama saat halaman dimuat
-  showSlider(currentSlider);
-
-  // Fungsi untuk navigasi ke slider selanjutnya
-  $('.next-sliders').click(function () {
-      currentSlider++;
-      if (currentSlider > 12) {
-          currentSlider = 1;
-      }
-      showSlider(currentSlider);
-  });
-
-  // Fungsi untuk navigasi ke slider sebelumnya
-  $('.prev-sliders').click(function () {
-      currentSlider--;
-      if (currentSlider < 1) {
-          currentSlider = 12;
-      }
-      showSlider(currentSlider);
-  });
+ghcost1.forEach(ghcost => {
+  const ghcostbtn = ghcost.querySelector('.ghcostbtn');
+  ghcostbtn.addEventListener('click', toggleghcostviewer);
 });
+//ghcost Func
 
-////////Slider Nav Func////////////////
+// kan cost Funct
+const kancost1 = document.querySelectorAll('.kancost2');
+
+function togglekancostviewer() {
+  const kancostviewer = this.nextElementSibling;
+  if (kancostviewer.style.maxHeight) {
+    kancostviewer.style.padding = '0px'; // Menghapus padding saat elemen tertutup
+    kancostviewer.style.maxHeight = null;
+    document.getElementById('kanbtntext').textContent = "詳しくはこちら"; // Perbarui teks button
+    document.getElementById('kanarrow').textContent = "▼"; // Perbarui teks button dengan karakter Unicode
+  } else {
+    kancostviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
+    kancostviewer.style.maxHeight = kancostviewer.scrollHeight + 'px';
+    document.getElementById('kanbtntext').textContent = "閉じる ❌"; // Perbarui teks button
+    document.getElementById('kanarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
+  }
+}
+
+kancost1.forEach(kancost2 => {
+  const kancostbtn = kancost2.querySelector('.kancostbtn');
+  kancostbtn.addEventListener('click', togglekancostviewer);
+});
+//kancost Func
 
 
 // backToTopButton Function

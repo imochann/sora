@@ -72,26 +72,29 @@
             margin-top: 10px;
             padding: 5px;
         }
-        
+
         #key_visual .main_image img{
+            margin-top: 10%;
             width: 100%;
-            height: 120vw;
+            height: auto;
         }
         
         #concept p{
             font-size: 30px;
             margin-bottom: 20px;
         }
-        
-        #concept .text1{
+        #concept li p{
             font-size: 14px;
+            padding-left: 40px;
+        }
+        
+        #concept span{
+            font-size: 28px;
             margin-bottom: 20px;
         }
         
         #concept ul{
             margin-bottom: 30px;
-            width: 90%;
-            font-weight: 10px;
         }
         
         #concept li{
@@ -101,8 +104,48 @@
         .facility {
             padding: 10px; /* Mengurangi padding pada perangkat seluler */
         }
+
+        .offerGH{
+            width: 80%;
+            height: 200px;
+            margin-bottom: 50px;
+        }
+        .offer_title{
+            font-size: 14px;
+            margin-top: -50px;
+        }
+        .ghcost {
+            margin-top: -140px;
+            width: 110%;
+          }
+        .ghcostbtn {
+            left: 50%;
+            margin-bottom: 50px;
+          }
+        #ghbtntext {
+            padding: 10px 40px;
+            font-size: 10px;
+          }
+        .offerKan{
+            top: -230px;
+            width: 85%;
+            height: 220px;
+            margin-bottom: 50px;
+        }
+        .kancost2 {
+            margin-top: -400px;
+            width: 110%;
+          }
+        .kancostbtn {
+            left: 50%;
+            margin-bottom: 100px;
+          }
+        #kanbtntext {
+            padding: 10px 40px;
+            font-size: 10px;
+          }
     
-        .facility table tr td table tr td {
+        .facility table tr td {
             border: 1px black solid;
             padding: 2px;
             font-size: 2vw; /* Mengurangi ukuran font pada perangkat seluler */
@@ -127,15 +170,6 @@
         .facility .main img {
             width: 100%; /* Menyesuaikan lebar gambar pada perangkat seluler */
             height: auto; /* Menyesuaikan tinggi gambar secara otomatis */
-        }
-    
-        .zoom_item {
-            width: 100%; /* Menyesuaikan lebar zoom_item pada perangkat seluler */
-            height: auto; /* Menyesuaikan tinggi zoom_item secara otomatis */
-        }
-    
-        .zoom_item .zoom_item-info a {
-            font-size: 16px; /* Mengurangi ukuran font pada perangkat seluler */
         }
 
         #footer {
@@ -177,21 +211,14 @@
             font-size: 3vw;
             top: 60%;
          }
-        #slider-number{
-            margin-left: 65%;
-            width: 100px;
-            font-size: 15px;
-            padding: 50 0 0 0;
+
+        .slider1 img{
+            width: 400px;
+            height: 250px;
         }
-        .slider img{
-            width: 100%;
+        .slider2 img{
+            width: 85%;
             height: 200px;
-        }
-        .prev-sliders{
-            font-size: 6vw;
-        }
-        .next-sliders{
-            font-size: 6vw;
         }
 
         /* slick Button Customize */
@@ -236,7 +263,7 @@
             left: 70%;
             top: 10%;
             width: 175px;
-            height: 225px;
+            height: 180px;
         }
 
         .offbtn {
@@ -254,7 +281,16 @@
             font-size: 20px;
         }
 
+        #guide img{
+            padding: 10px;
+            width: 90px;
+            height: 90px;
+        }
         #guide .textarea2{
+            font-size: 15px;
+        }
+        .job_info p{
+            padding: 14px;
             font-size: 15px;
         }
 
