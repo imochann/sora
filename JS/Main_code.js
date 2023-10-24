@@ -23,14 +23,6 @@ faqs.forEach(faq => {
 $(document).on('ready', function(){
 
   //Slider Initializer
-  $(".slider1").slick({
-      arrows:true,
-      dots: true,
-      autoplay: true,
-      autoplayspeed: 10000,
-      fade:true, 
-      cssEase:'linear'
-  });
   $(".slider2").slick({
       arrows:false,
       dots: true,
@@ -61,8 +53,9 @@ $(document).on('ready', function(){
   });
 //Slider Initialize
 
-// Slider Funct
+///////SoraDayori Slider Funct//////
 const slides1 = document.querySelectorAll('.slides');
+let isSliderInitialized = false;
 
 function toggleSlidviewer() {
   const slidviewer = this.nextElementSibling;
@@ -72,9 +65,22 @@ function toggleSlidviewer() {
     document.getElementById('slidbtntext').textContent = "詳しくはこちら"; // Perbarui teks button
     document.getElementById('slidarrow').textContent = "▼"; // Perbarui teks button dengan karakter Unicode
   } else {
+    if (!isSliderInitialized) {
+      // Inisialisasi slider hanya jika belum diinisiasi
+      const slider1 = slidviewer.querySelector('.slider1');
+      $(slider1).slick({
+        arrows: true,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        fade: true,
+        cssEase: 'linear'
+      });
+      isSliderInitialized = true; // Setel penanda bahwa slider sudah diinisiasi
+    }
     slidviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
     slidviewer.style.maxHeight = slidviewer.scrollHeight + 'px';
-    document.getElementById('slidbtntext').textContent = "閉じる ❌"; // Perbarui teks button
+    document.getElementById('slidbtntext').textContent = "閉じる"; // Perbarui teks button
     document.getElementById('slidarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
   }
 }
@@ -83,7 +89,7 @@ slides1.forEach(slides => {
   const slidbtn = slides.querySelector('.slidbtn');
   slidbtn.addEventListener('click', toggleSlidviewer);
 });
-//Slider Func
+///////SoraDayori Slider Funct//////
 
 // GH cost Funct
 const ghcost1 = document.querySelectorAll('.ghcost');
@@ -98,7 +104,7 @@ function toggleghcostviewer() {
   } else {
     ghcostviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
     ghcostviewer.style.maxHeight = ghcostviewer.scrollHeight + 'px';
-    document.getElementById('ghbtntext').textContent = "閉じる ❌"; // Perbarui teks button
+    document.getElementById('ghbtntext').textContent = "閉じる"; // Perbarui teks button
     document.getElementById('gharrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
   }
 }
@@ -122,7 +128,7 @@ function togglekancostviewer() {
   } else {
     kancostviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
     kancostviewer.style.maxHeight = kancostviewer.scrollHeight + 'px';
-    document.getElementById('kanbtntext').textContent = "閉じる ❌"; // Perbarui teks button
+    document.getElementById('kanbtntext').textContent = "閉じる"; // Perbarui teks button
     document.getElementById('kanarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
   }
 }
