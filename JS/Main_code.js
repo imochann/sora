@@ -18,28 +18,6 @@ faqs.forEach(faq => {
 });
 
 
-//////Image Chooser///////
-// Fungsi untuk mengganti URL gambar ke versi mobile saat ukuran layar sesuai
-function setMobileImages() {
-  const screenWidth = window.innerWidth;
-  const images = document.querySelectorAll('.slider1 img , .slider2 img');
-
-  images.forEach(image => {
-      const mobileSrc = image.getAttribute('data-mobile-src');
-
-      if (screenWidth <= 767) {
-          image.src = mobileSrc;
-      }
-  });
-}
-
-// Panggil fungsi saat halaman dimuat dan saat ukuran layar berubah
-window.addEventListener('load', setMobileImages);
-window.addEventListener('resize', setMobileImages);
-
-//////Image Chooser///////
-
-
 
 //Document Initialize Slider , Mobile Menu
 $(document).on('ready', function(){

@@ -112,7 +112,6 @@
         }
 
         .offerGH{
-            background-image: linear-gradient(to right, transparent 40%, whitesmoke), url("../images/mobile/GH-min.jpg");
             width: 80%;
             height: 200px;
             margin-bottom: 50px;
@@ -256,7 +255,6 @@
         }
 
         .offer{
-            background-image: linear-gradient(to right, transparent 40%, white), url("../images/mobile/soratoppu-min.jpg");
             width: 80%;
             height: 200px;
         }
