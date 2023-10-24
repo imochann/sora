@@ -22,7 +22,7 @@ faqs.forEach(faq => {
 // Fungsi untuk mengganti URL gambar ke versi mobile saat ukuran layar sesuai
 function setMobileImages() {
   const screenWidth = window.innerWidth;
-  const images = document.querySelectorAll('.slider1 img');
+  const images = document.querySelectorAll('.slider1 img , .slider2 img');
 
   images.forEach(image => {
       const mobileSrc = image.getAttribute('data-mobile-src');
