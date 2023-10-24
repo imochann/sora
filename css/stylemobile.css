@@ -79,12 +79,17 @@
             height: auto;
         }
         
+        #concept{
+            margin-bottom: 30px;
+            padding: 20px 10px 10px 10px;
+        }
+
         #concept p{
             font-size: 30px;
             margin-bottom: 20px;
         }
         #concept li p{
-            font-size: 14px;
+            font-size: 10px;
             padding-left: 40px;
         }
         
@@ -98,6 +103,7 @@
         }
         
         #concept li{
+            padding: 5px;
             font-size: 18px;
         }
 
@@ -272,13 +278,10 @@
             padding: 7px 25px;
             font-size: 10px;
           }
-        
-        #survice h3{
-            font-size: 15px;
-            font-weight: bolder;
-        }
-        #survice h2{
-            font-size: 20px;
+
+        #survice{
+            padding-top: 30px;
+            margin-bottom: 30px;
         }
 
         #guide img{

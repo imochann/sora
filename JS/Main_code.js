@@ -17,18 +17,12 @@ faqs.forEach(faq => {
   question.addEventListener('click', toggleAnswer);
 });
 
+
+
 //Document Initialize Slider , Mobile Menu
 $(document).on('ready', function(){
 
   //Slider Initializer
-  $(".slider1").slick({
-      arrows:true,
-      dots: true,
-      autoplay: true,
-      autoplayspeed: 10000,
-      fade:true, 
-      cssEase:'linear'
-  });
   $(".slider2").slick({
       arrows:false,
       dots: true,
@@ -59,8 +53,9 @@ $(document).on('ready', function(){
   });
 //Slider Initialize
 
-// Slider Funct
+///////SoraDayori Slider Funct//////
 const slides1 = document.querySelectorAll('.slides');
+let isSliderInitialized = false;
 
 function toggleSlidviewer() {
   const slidviewer = this.nextElementSibling;
@@ -70,9 +65,22 @@ function toggleSlidviewer() {
     document.getElementById('slidbtntext').textContent = "詳しくはこちら"; // Perbarui teks button
     document.getElementById('slidarrow').textContent = "▼"; // Perbarui teks button dengan karakter Unicode
   } else {
+    if (!isSliderInitialized) {
+      // Inisialisasi slider hanya jika belum diinisiasi
+      const slider1 = slidviewer.querySelector('.slider1');
+      $(slider1).slick({
+        arrows: true,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        fade: true,
+        cssEase: 'linear'
+      });
+      isSliderInitialized = true; // Setel penanda bahwa slider sudah diinisiasi
+    }
     slidviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
     slidviewer.style.maxHeight = slidviewer.scrollHeight + 'px';
-    document.getElementById('slidbtntext').textContent = "閉じる ❌"; // Perbarui teks button
+    document.getElementById('slidbtntext').textContent = "閉じる"; // Perbarui teks button
     document.getElementById('slidarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
   }
 }
@@ -81,10 +89,15 @@ slides1.forEach(slides => {
   const slidbtn = slides.querySelector('.slidbtn');
   slidbtn.addEventListener('click', toggleSlidviewer);
 });
-//Slider Func
+///////SoraDayori Slider Funct//////
 
 // GH cost Funct
 const ghcost1 = document.querySelectorAll('.ghcost');
+
+let scrollOffset = 2000; // Offset default untuk desktop
+if (window.matchMedia('(max-width: 768px)').matches) {
+  scrollOffset = 900; // Ganti offset untuk mobile
+}
 
 function toggleghcostviewer() {
   const ghcostviewer = this.nextElementSibling;
@@ -96,8 +109,16 @@ function toggleghcostviewer() {
   } else {
     ghcostviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
     ghcostviewer.style.maxHeight = ghcostviewer.scrollHeight + 'px';
-    document.getElementById('ghbtntext').textContent = "閉じる ❌"; // Perbarui teks button
+    document.getElementById('ghbtntext').textContent = "閉じる"; // Perbarui teks button
     document.getElementById('gharrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
+    
+     // Scroll ke bawah elemen terbuka dengan offset yang sesuai
+     const offsetTop = ghcostviewer.offsetTop;
+     window.scroll({
+       top: offsetTop + scrollOffset, // Gunakan offset yang sesuai
+       behavior: 'smooth', // Untuk efek scrolling yang mulus
+     });
+
   }
 }
 
@@ -110,6 +131,11 @@ ghcost1.forEach(ghcost => {
 // kan cost Funct
 const kancost1 = document.querySelectorAll('.kancost2');
 
+let kanscrollOffset = 2000; // Offset default untuk desktop
+if (window.matchMedia('(max-width: 768px)').matches) {
+  kanscrollOffset = 900; // Ganti offset untuk mobile
+}
+
 function togglekancostviewer() {
   const kancostviewer = this.nextElementSibling;
   if (kancostviewer.style.maxHeight) {
@@ -120,8 +146,16 @@ function togglekancostviewer() {
   } else {
     kancostviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
     kancostviewer.style.maxHeight = kancostviewer.scrollHeight + 'px';
-    document.getElementById('kanbtntext').textContent = "閉じる ❌"; // Perbarui teks button
+    document.getElementById('kanbtntext').textContent = "閉じる"; // Perbarui teks button
     document.getElementById('kanarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
+
+     // Scroll ke bawah elemen terbuka dengan offset yang sesuai
+     const offsetTop = kancostviewer.offsetTop;
+     window.scroll({
+       top: offsetTop + kanscrollOffset, // Gunakan offset yang sesuai
+       behavior: 'smooth', // Untuk efek scrolling yang mulus
+     });
+
   }
 }
 
