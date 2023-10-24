@@ -94,6 +94,11 @@ slides1.forEach(slides => {
 // GH cost Funct
 const ghcost1 = document.querySelectorAll('.ghcost');
 
+let scrollOffset = 2000; // Offset default untuk desktop
+if (window.matchMedia('(max-width: 768px)').matches) {
+  scrollOffset = 900; // Ganti offset untuk mobile
+}
+
 function toggleghcostviewer() {
   const ghcostviewer = this.nextElementSibling;
   if (ghcostviewer.style.maxHeight) {
@@ -106,6 +111,14 @@ function toggleghcostviewer() {
     ghcostviewer.style.maxHeight = ghcostviewer.scrollHeight + 'px';
     document.getElementById('ghbtntext').textContent = "閉じる"; // Perbarui teks button
     document.getElementById('gharrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
+    
+     // Scroll ke bawah elemen terbuka dengan offset yang sesuai
+     const offsetTop = ghcostviewer.offsetTop;
+     window.scroll({
+       top: offsetTop + scrollOffset, // Gunakan offset yang sesuai
+       behavior: 'smooth', // Untuk efek scrolling yang mulus
+     });
+
   }
 }
 
@@ -117,6 +130,11 @@ ghcost1.forEach(ghcost => {
 
 // kan cost Funct
 const kancost1 = document.querySelectorAll('.kancost2');
+
+let kanscrollOffset = 2000; // Offset default untuk desktop
+if (window.matchMedia('(max-width: 768px)').matches) {
+  kanscrollOffset = 900; // Ganti offset untuk mobile
+}
 
 function togglekancostviewer() {
   const kancostviewer = this.nextElementSibling;
@@ -130,6 +148,14 @@ function togglekancostviewer() {
     kancostviewer.style.maxHeight = kancostviewer.scrollHeight + 'px';
     document.getElementById('kanbtntext').textContent = "閉じる"; // Perbarui teks button
     document.getElementById('kanarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
+
+     // Scroll ke bawah elemen terbuka dengan offset yang sesuai
+     const offsetTop = kancostviewer.offsetTop;
+     window.scroll({
+       top: offsetTop + kanscrollOffset, // Gunakan offset yang sesuai
+       behavior: 'smooth', // Untuk efek scrolling yang mulus
+     });
+
   }
 }
 
