@@ -91,7 +91,7 @@ function toggleSlidviewer() {
         ],
         swipe: true, // Aktifkan swipe
   swipeToSlide: true, // Aktifkan swipe-to-slide
-  swipeThreshold: 50, // Jarak pergerakan yang diperlukan sebelum dianggap sebagai scroll
+  swipeThreshold: 10, // Jarak pergerakan yang diperlukan sebelum dianggap sebagai scroll
       });
 
       isSliderInitialized = true; // Setel penanda bahwa slider sudah diinisiasi
@@ -110,24 +110,24 @@ slides1.forEach(slides => {
 ///////SoraDayori Slider Funct//////
 
 
-$('.slider1').on('touchstart', function(e) {
-  var touchstartX = e.originalEvent.touches[0].clientX;
-  var slideOffset = 0;
+// $('.slider1').on('touchstart', function(e) {
+//   var touchstartX = e.originalEvent.touches[0].clientX;
+//   var slideOffset = 0;
 
-  $(document).on('touchmove', function(e) {
-    var touchendX = e.originalEvent.touches[0].clientX;
-    slideOffset = touchstartX - touchendX;
-  });
+//   $(document).on('touchmove', function(e) {
+//     var touchendX = e.originalEvent.touches[0].clientX;
+//     slideOffset = touchstartX - touchendX;
+//   });
 
-  $(document).on('touchend', function() {
-    if (slideOffset < 0) {
-      $('.slider1').slick('slickPrev');
-    } else if (slideOffset > 0) {
-      $('.slider1').slick('slickNext');
-    }
-    $(document).off('touchmove touchend');
-  });
-});
+//   $(document).on('touchend', function() {
+//     if (slideOffset < 0) {
+//       $('.slider1').slick('slickPrev');
+//     } else if (slideOffset > 0) {
+//       $('.slider1').slick('slickNext');
+//     }
+//     $(document).off('touchmove touchend');
+//   });
+// });
 //////Scroll Func
 
 // GH cost Funct
