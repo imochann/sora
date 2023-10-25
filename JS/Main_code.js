@@ -1,3 +1,10 @@
+/////Declaration AutoScroll/////
+let scrollOffset = 2000; // Offset default untuk desktop
+if (window.matchMedia('(max-width: 768px)').matches) {
+  scrollOffset = 900; // Ganti offset untuk mobile
+}
+/////Declaration AutoScroll/////
+
 // Q&A Funct
 const faqs = document.querySelectorAll('.faq');
 
@@ -56,6 +63,7 @@ $(document).on('ready', function(){
 ///////SoraDayori Slider Funct//////
 const slides1 = document.querySelectorAll('.slides');
 let isSliderInitialized = false;
+const isMobile = window.matchMedia("(max-width: 768px)").matches; // Ganti dengan breakpoint yang sesuai
 
 function toggleSlidviewer() {
   const slidviewer = this.nextElementSibling;
@@ -68,31 +76,44 @@ function toggleSlidviewer() {
     if (!isSliderInitialized) {
       // Inisialisasi slider hanya jika belum diinisiasi
       const slider1 = slidviewer.querySelector('.slider1');
-      // $(slider1).slick({
-      //   arrows: true,
-      //   dots: true,
-      //   autoplay: true,
-      //   autoplaySpeed: 10000,
-      //   fade: true,
-      //   cssEase: 'linear'
-      // });
+      const isMobile = window.matchMedia("(max-width: 768px)").matches; // Ganti dengan breakpoint yang sesuai
 
-      $('.slider1').slick({
-        slidesToShow: 3, // Jumlah gambar yang ditampilkan
-        slidesToScroll: 1,
-        infinite: true,
-        responsive: [
-          {
-            breakpoint: 768, // Breakpoint untuk perangkat mobile
-            settings: {
-              slidesToShow: 1,
-            }
-          }
-        ],
-        swipe: true, // Aktifkan swipe
-  swipeToSlide: true, // Aktifkan swipe-to-slide
-  swipeThreshold: 10, // Jarak pergerakan yang diperlukan sebelum dianggap sebagai scroll
-      });
+        if (isMobile) {
+          // Ubah Url Image Slider1 Agar tidak di download
+          const slider1Images = slidviewer.querySelectorAll('.slider1 img');
+            slider1Images.forEach((image) => {
+              image.src = ''; // Atur src gambar menjadi kosong
+            });
+          // Inisialisasi slider untuk layar mobile
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            freeMode: true,
+            autoplay: {
+              delay: 4000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        } else {
+          // Ubah Url Image Swiper Agar tidak di download
+          const swiperImages = slidviewer.querySelectorAll('.swiper-wrapper img');
+          swiperImages.forEach((image) => {
+              image.src = ''; // Atur src gambar menjadi kosong
+            });
+          // Inisialisasi slider1 untuk layar desktop
+          $(slider1).slick({
+            arrows: true,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 10000,
+            fade: true,
+            cssEase: 'linear'
+          });
+        }
 
       isSliderInitialized = true; // Setel penanda bahwa slider sudah diinisiasi
     }
@@ -100,6 +121,12 @@ function toggleSlidviewer() {
     slidviewer.style.maxHeight = slidviewer.scrollHeight + 'px';
     document.getElementById('slidbtntext').textContent = "閉じる"; // Perbarui teks button
     document.getElementById('slidarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
+    // Scroll ke bawah elemen terbuka dengan offset yang sesuai
+    const offsetTopslid = slidviewer.offsetTop;
+    window.scroll({
+      top: offsetTopslid + 4500, // Total Offset px
+      behavior: 'smooth', // Untuk efek scrolling yang mulus
+    });
   }
 }
 
@@ -109,34 +136,8 @@ slides1.forEach(slides => {
 });
 ///////SoraDayori Slider Funct//////
 
-
-// $('.slider1').on('touchstart', function(e) {
-//   var touchstartX = e.originalEvent.touches[0].clientX;
-//   var slideOffset = 0;
-
-//   $(document).on('touchmove', function(e) {
-//     var touchendX = e.originalEvent.touches[0].clientX;
-//     slideOffset = touchstartX - touchendX;
-//   });
-
-//   $(document).on('touchend', function() {
-//     if (slideOffset < 0) {
-//       $('.slider1').slick('slickPrev');
-//     } else if (slideOffset > 0) {
-//       $('.slider1').slick('slickNext');
-//     }
-//     $(document).off('touchmove touchend');
-//   });
-// });
-//////Scroll Func
-
 // GH cost Funct
 const ghcost1 = document.querySelectorAll('.ghcost');
-
-let scrollOffset = 2000; // Offset default untuk desktop
-if (window.matchMedia('(max-width: 768px)').matches) {
-  scrollOffset = 900; // Ganti offset untuk mobile
-}
 
 function toggleghcostviewer() {
   const ghcostviewer = this.nextElementSibling;
