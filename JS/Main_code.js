@@ -68,14 +68,29 @@ function toggleSlidviewer() {
     if (!isSliderInitialized) {
       // Inisialisasi slider hanya jika belum diinisiasi
       const slider1 = slidviewer.querySelector('.slider1');
-      $(slider1).slick({
-        arrows: true,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 10000,
-        fade: true,
-        cssEase: 'linear'
+      // $(slider1).slick({
+      //   arrows: true,
+      //   dots: true,
+      //   autoplay: true,
+      //   autoplaySpeed: 10000,
+      //   fade: true,
+      //   cssEase: 'linear'
+      // });
+
+      $('.slider1').slick({
+        slidesToShow: 3, // Jumlah gambar yang ditampilkan
+        slidesToScroll: 1,
+        infinite: true,
+        responsive: [
+          {
+            breakpoint: 768, // Breakpoint untuk perangkat mobile
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
       });
+
       isSliderInitialized = true; // Setel penanda bahwa slider sudah diinisiasi
     }
     slidviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
@@ -90,6 +105,27 @@ slides1.forEach(slides => {
   slidbtn.addEventListener('click', toggleSlidviewer);
 });
 ///////SoraDayori Slider Funct//////
+
+
+$('.slider1').on('touchstart', function(e) {
+  var touchstartX = e.originalEvent.touches[0].clientX;
+  var slideOffset = 0;
+
+  $(document).on('touchmove', function(e) {
+    var touchendX = e.originalEvent.touches[0].clientX;
+    slideOffset = touchstartX - touchendX;
+  });
+
+  $(document).on('touchend', function() {
+    if (slideOffset < 0) {
+      $('.slider1').slick('slickPrev');
+    } else if (slideOffset > 0) {
+      $('.slider1').slick('slickNext');
+    }
+    $(document).off('touchmove touchend');
+  });
+});
+//////Scroll Func
 
 // GH cost Funct
 const ghcost1 = document.querySelectorAll('.ghcost');
