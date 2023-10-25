@@ -318,7 +318,7 @@ header nav a:hover {
     line-height: 40px;
     top: 100px;
     color: #000000;
-    text-shadow: 2px 2px 2px gray ;
+    /* text-shadow: 2px 2px 2px gray ; */
  }
 
 /* Sora Slider */
@@ -370,6 +370,7 @@ header nav a:hover {
     padding: 30px;
     text-align: left;
     font-size: 30px;
+    text-align: center;
 }
 
 
