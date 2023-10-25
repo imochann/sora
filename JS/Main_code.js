@@ -88,7 +88,10 @@ function toggleSlidviewer() {
               slidesToShow: 1,
             }
           }
-        ]
+        ],
+        swipe: true, // Aktifkan swipe
+  swipeToSlide: true, // Aktifkan swipe-to-slide
+  swipeThreshold: 50, // Jarak pergerakan yang diperlukan sebelum dianggap sebagai scroll
       });
 
       isSliderInitialized = true; // Setel penanda bahwa slider sudah diinisiasi
