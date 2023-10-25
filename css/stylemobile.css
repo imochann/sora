@@ -94,7 +94,7 @@
         }
         
         #concept span{
-            font-size: 28px;
+            font-size: 24px;
             margin-bottom: 20px;
         }
         
@@ -144,7 +144,7 @@
           }
         .kancostbtn {
             left: 50%;
-            margin-bottom: 100px;
+            margin-bottom: 70px;
           }
         #kanbtntext {
             padding: 10px 40px;
@@ -291,7 +291,7 @@
         .offtext{
             text-align: center;
             font-size: 10px;
-            left: 65%;
+            left: 60%;
             top: 10%;
             width: 190px;
             height: 180px;

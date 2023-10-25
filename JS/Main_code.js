@@ -67,6 +67,7 @@ const isMobile = window.matchMedia("(max-width: 768px)").matches; // Ganti denga
 
 function toggleSlidviewer() {
   const slidviewer = this.nextElementSibling;
+  const offsetTopslid = slidviewer.offsetTop;
   if (slidviewer.style.maxHeight) {
     slidviewer.style.padding = '0px'; // Menghapus padding saat elemen tertutup
     slidviewer.style.maxHeight = null;
@@ -98,6 +99,8 @@ function toggleSlidviewer() {
               clickable: true,
             },
           });
+          slidscrollOffset = 4480; // Ganti offset untuk mobile
+
         } else {
           // Ubah Url Image Swiper Agar tidak di download
           const swiperImages = slidviewer.querySelectorAll('.swiper-wrapper img');
@@ -109,10 +112,11 @@ function toggleSlidviewer() {
             arrows: true,
             dots: true,
             autoplay: true,
-            autoplaySpeed: 10000,
+            autoplaySpeed: 6000,
             fade: true,
             cssEase: 'linear'
           });
+          slidscrollOffset = 6250; // Offset default untuk desktop
         }
 
       isSliderInitialized = true; // Setel penanda bahwa slider sudah diinisiasi
@@ -121,10 +125,10 @@ function toggleSlidviewer() {
     slidviewer.style.maxHeight = slidviewer.scrollHeight + 'px';
     document.getElementById('slidbtntext').textContent = "閉じる"; // Perbarui teks button
     document.getElementById('slidarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
+
     // Scroll ke bawah elemen terbuka dengan offset yang sesuai
-    const offsetTopslid = slidviewer.offsetTop;
     window.scroll({
-      top: offsetTopslid + 4500, // Total Offset px
+      top: offsetTopslid + slidscrollOffset, // Total Offset px
       behavior: 'smooth', // Untuk efek scrolling yang mulus
     });
   }
