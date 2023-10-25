@@ -112,7 +112,7 @@
         }
 
         .offerGH{
-            width: 80%;
+            width: 85%;
             height: 200px;
             margin-bottom: 50px;
         }
@@ -289,10 +289,11 @@
         }
 
         .offtext{
+            text-align: center;
             font-size: 10px;
-            left: 70%;
+            left: 65%;
             top: 10%;
-            width: 175px;
+            width: 190px;
             height: 180px;
         }
 
