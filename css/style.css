@@ -584,6 +584,7 @@ header nav a:hover {
 .offer_title{
     font-size: 25px;
     font-weight: 700;
+    line-height: 50px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -595,7 +596,7 @@ header nav a:hover {
     font-weight: 100;
     position: relative;
     left: 80%;
-    top: 100px;
+    top: 70px;
     width: 350px;
     height: 450px;
 }
