@@ -10,6 +10,9 @@
     <link rel="stylesheet" type="text/css" href="JS/aos/aos.css" >
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/stylemobile.css" />
+
+    <!-- swiper plugins -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   
     <!-- Google font -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,16 +61,14 @@
             <p>SORA に込めた思い</p>
             <div class="flex">
             <ul>
-                <li><span>S&nbsp;&nbsp;</span>:&nbsp;&nbsp;&nbsp;&nbsp;Smile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><span>S&nbsp;&nbsp;&nbsp;</span>:&nbsp;&nbsp;Smile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;笑顔</li>
                 <li><p>笑顔 笑顔はただの表情ではなく、心からの喜び、 共感、 そして思いやりを 示す象徴です。</p></li>
-                <li><span>O&nbsp;</span>:&nbsp;&nbsp;Open Mind&nbsp;&nbsp;&nbsp;&nbsp;開かれた心</li>
+                <li><span>O&nbsp;&nbsp;</span>:&nbsp;&nbsp;Open Mind&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;開かれた心</li>
                 <li><p>新しい視点を持ち、 新たな可能性を見つけ出すことです。それは私たちが、 違う背景を持つ人々と共に働き、生活するための必要な態度です。</p></li>
-                <li><span>R&nbsp;</span>:&nbsp;&nbsp;&nbsp;&nbsp;Respect&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;敬意</li>
+                <li><span>R&nbsp;&nbsp;&nbsp;</span>:&nbsp;&nbsp;Respect&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;敬意</li>
                 <li><p>それぞれの個性、価値観、そして経験を尊重し、それぞれが自分らしく あることを大切にします</p></li>
-                <li><span>A&nbsp;</span>:&nbsp;&nbsp;Appreciate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;感謝</li>
+                <li><span>A&nbsp;&nbsp;&nbsp;</span>:&nbsp;&nbsp;Appreciate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;感謝</li>
                 <li><p>常に感謝の心を持つことを忘れません。 感謝こそが私たちの心を豊かにし 絆を深める力となります</p></li>
                 <li><p>SORAの理念は、これら4つの羽を地域社会に提供し、私たちが目指す 高齢者ケアの理想像を実現することです</p></li>
             </ul>     
@@ -95,7 +96,7 @@
                                     <div class="offerGH">
                                         <div class="offtext">
                                             <br><br><br><br><br>
-                                            <div class="offer_title">グループホーム ファミリー</div><br><br><br>
+                                            <div class="offer_title">グループホーム <br> ファミリー</div><br><br><br>
                                         </div>
                                     </div>
                                     <div class="ghcost">
@@ -193,7 +194,7 @@
                                     <div class="offerKan">
                                         <div class="offtext">
                                             <br><br><br><br><br>
-                                            <div class="offer_title">介護付きホームファミリー</div><br><br><br>
+                                            <div class="offer_title">介護付きホーム <br> ファミリー</div><br><br><br>
                                         </div>
                                     </div>
                                     <div class="kancost2">
@@ -389,7 +390,7 @@
                 <div id="slidbtntext" style="margin-right: 5px;">詳しくはこちら</div>
                 <div id="slidarrow">▼</div>
             </button>
-            <div class="slidviewer"><br><br><br>
+            <div class="slidviewer"><br><br>
                 <div class="slider1">
                     <div>
                         <img src="images/IMG_01.jpg" alt="スライドショー">
@@ -431,6 +432,25 @@
                         <img src="images/IMG_13.jpg" alt="スライドショー">
                     </div>
                 </div> 
+                <div id="swiper" class="mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="images/IMG_01.jpg" alt="スライドショー"></div>
+                      <div class="swiper-slide"><img src="images/IMG_02.jpg" alt="スライドショー"></div>
+                      <div class="swiper-slide"><img src="images/IMG_03.jpg" alt="スライドショー"></div>
+                      <div class="swiper-slide"><img src="images/IMG_04.jpg" alt="スライドショー"></div>
+                      <div class="swiper-slide"><img src="images/IMG_05.jpg" alt="スライドショー"></div>
+                      <div class="swiper-slide"><img src="images/IMG_06.jpg" alt="スライドショー"></div>
+                      <div class="swiper-slide"><img src="images/IMG_07.jpg" alt="スライドショー"></div>
+                      <div class="swiper-slide"><img src="images/IMG_08.jpg" alt="スライドショー"></div>
+                      <div class="swiper-slide"><img src="images/IMG_09.jpg" alt="スライドショー"></div>
+                      <div class="swiper-slide"><img src="images/IMG_10.jpg" alt="スライドショー"></div>
+                      <div class="swiper-slide"><img src="images/IMG_11.jpg" alt="スライドショー"></div>
+                      <div class="swiper-slide"><img src="images/IMG_12.jpg" alt="スライドショー"></div>
+                      <div class="swiper-slide"><img src="images/IMG_13.jpg" alt="スライドショー"></div>
+                    </div>
+                    <div id="swipebehinder" class="swiper-pagination"></div>
+                  </div>
+                  
                 <br><br><br><br>
             </div>
         </div>
@@ -662,5 +682,11 @@
     <script type="text/javascript" src="slick.min.js"></script>
     <script src="JS/Main_code.js"></script>
      <script>AOS.init();</script>
+
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
 </body>
 </html>
