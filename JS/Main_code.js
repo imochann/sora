@@ -99,7 +99,7 @@ function toggleSlidviewer() {
               clickable: true,
             },
           });
-          slidscrollOffset = 4480; // Ganti offset untuk mobile
+          slidscrollOffset = 4400; // Ganti offset untuk mobile
 
         } else {
           // Ubah Url Image Swiper Agar tidak di download

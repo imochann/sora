@@ -35,20 +35,27 @@
             font-size: 24px;
             cursor: pointer;
         }
+        header nav a{
+            padding: 10px;
+            color: #2c3e50;
+            height: 16px;
+            width: auto;
+            font-size: 16px;
+        }
 
         #nav-menu {
-            /* display: none; Sembunyikan menu saat tampilan smartphone */
             position: absolute;
             top: 45px;
             background-color: whitesmoke;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             padding: 5px;
-            z-index: 100;
             border-radius: 5px;
             text-align: center;
             opacity: 0; /* Awalnya, set opasitas ke 0 untuk menyembunyikan menu */
+            z-index: -99;
             transform: translateY(-5px); /* Mulai dengan posisi di luar tampilan */
             transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out; 
+            /*Sembunyikan menu saat tampilan smartphone */
         }
     
         #nav-menu ul {
@@ -62,8 +69,8 @@
     
         /* Tampilkan menu saat tombol menu hamburger diklik */
         #menu-toggle.active + #nav-menu {
-            /* display: block; */
             opacity: 1; /* Saat aktif, set opasitas ke 1 untuk menampilkan menu */
+            z-index: 10;
             transform: translateY(0); /* Geser menu ke posisi yang benar saat aktif */
         }
         
