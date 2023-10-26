@@ -63,7 +63,13 @@ $(document).on('ready', function(){
 ///////SoraDayori Slider Funct//////
 const slides1 = document.querySelectorAll('.slides');
 let isSliderInitialized = false;
+let slidscrollOffset = 6250; // Offset default untuk desktop
 const isMobile = window.matchMedia("(max-width: 768px)").matches; // Ganti dengan breakpoint yang sesuai
+
+// Periksa apakah tampilan saat ini adalah versi mobile
+if (isMobile) {
+  slidscrollOffset = 4400; // Ganti offset untuk mobile
+}
 
 function toggleSlidviewer() {
   const slidviewer = this.nextElementSibling;
@@ -77,7 +83,6 @@ function toggleSlidviewer() {
     if (!isSliderInitialized) {
       // Inisialisasi slider hanya jika belum diinisiasi
       const slider1 = slidviewer.querySelector('.slider1');
-      const isMobile = window.matchMedia("(max-width: 768px)").matches; // Ganti dengan breakpoint yang sesuai
 
         if (isMobile) {
           // Ubah Url Image Slider1 Agar tidak di download
@@ -99,7 +104,7 @@ function toggleSlidviewer() {
               clickable: true,
             },
           });
-          slidscrollOffset = 4400; // Ganti offset untuk mobile
+          
 
         } else {
           // Ubah Url Image Swiper Agar tidak di download
@@ -116,7 +121,7 @@ function toggleSlidviewer() {
             fade: true,
             cssEase: 'linear'
           });
-          slidscrollOffset = 6250; // Offset default untuk desktop
+          
         }
 
       isSliderInitialized = true; // Setel penanda bahwa slider sudah diinisiasi
