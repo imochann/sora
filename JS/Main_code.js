@@ -92,9 +92,11 @@ function toggleSlidviewer() {
             });
           // Inisialisasi slider untuk layar mobile
           var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            freeMode: true,
+            spaceBetween: 20,
+            cssMode: true,
+            mousewheel: true,
+            keyboard: true,
+            loop: true,
             autoplay: {
               delay: 4000,
               disableOnInteraction: false,
