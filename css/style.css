@@ -421,6 +421,8 @@ header nav a:hover {
     display: none;
     cursor: pointer;
     text-decoration: none;
+    font-weight: bolder;
+    transform: rotate(-90deg);
     z-index: 99;
     width: 55px;
     height: 55px;
