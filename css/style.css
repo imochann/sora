@@ -421,17 +421,17 @@ header nav a:hover {
     display: none;
     cursor: pointer;
     text-decoration: none;
-    transform: rotate(270deg);
     z-index: 99;
     width: 55px;
     height: 55px;
     font-size: 24px;
-    background-color: rgb(29, 24, 24);
+    background-color: rgb(46, 41, 41);
     border: none; 
     border-radius: 15%;
     line-height: 50px; /* Tinggi garis sesuai dengan tinggi tombol */
     text-align: center; 
     color: whitesmoke;
+    transform: rotate(270deg);
   }
 #back-to-top:hover{
     background-color: gray;
