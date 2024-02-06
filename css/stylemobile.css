@@ -187,11 +187,11 @@
         }
 
         #footer {
-            padding: 10px 0 0 0; /* Mengurangi padding pada perangkat seluler */
+            padding: 0;
             width: 100%;
             margin: 0 auto;
             position: relative;
-            font-size: x-small;
+            font-size: small;
         }
     
         #footer table {
@@ -208,10 +208,11 @@
 
         #footer .copyright{
             padding: 10px;
+            font-size: x-small;
         }
 
         #footer .footer-links ul {
-            padding-top: 0px;
+            padding: 10px 0;
         }
 
         .column .text01{
