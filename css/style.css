@@ -420,7 +420,6 @@ header nav a:hover {
     right: 30px;
     display: none;
     cursor: pointer;
-    text-decoration: none;
     z-index: 99;
     width: 55px;
     height: 55px;
