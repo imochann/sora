@@ -458,10 +458,15 @@ header nav a:hover {
     font-size: 13px;
     border-top: 1px solid #17455e;
     border-bottom: 1px solid #123649;
-    padding: 20px 0 10px 0;
+    padding: 20px 0 0 0;
   }
 
 #footer .copyright{
+    background-color: #333; 
+    text-align: center; 
+    padding: 20px;
+}
+#footer .copyright img{
     background-color: #333; 
     text-align: center; 
     padding: 20px;
@@ -474,27 +479,7 @@ header nav a:hover {
     font-family: "Roboto", sans-serif;
     color: #fff;
   }
-  
-#footer .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: #1e4356;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-  }
-  
-#footer .social-links a:hover {
-    background: #68A4C4;
-    color: #fff;
-    text-decoration: none;
-  }
+
   
 #footer h4 {
     font-size: 16px;
@@ -506,6 +491,7 @@ header nav a:hover {
   
 #footer .footer-links ul {
     list-style-type: none;
+    padding-top: 15px;
   }
   
 #footer .footer-links ul li {
