@@ -416,13 +416,25 @@ header nav a:hover {
 
 #back-to-top {
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 30px;
+    right: 30px;
     display: none;
     cursor: pointer;
     text-decoration: none;
     z-index: 99;
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
+    background-color: rgb(29, 24, 24);
+    border: none; 
+    border-radius: 15%;
+    line-height: 50px; /* Tinggi garis sesuai dengan tinggi tombol */
+    text-align: center; 
+    color: whitesmoke;
   }
+#back-to-top:hover{
+    background-color: gray;
+    }
 
 /* Q&A */
 .faq {
