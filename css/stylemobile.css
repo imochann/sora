@@ -187,10 +187,11 @@
         }
 
         #footer {
-            padding: 20px 0px; /* Mengurangi padding pada perangkat seluler */
+            padding: 0;
             width: 100%;
             margin: 0 auto;
             position: relative;
+            font-size: small;
         }
     
         #footer table {
@@ -201,14 +202,17 @@
             padding: 0px;
             width: 20%; /* Menyesuaikan lebar sel-sel pada perangkat seluler */
         }
-    
-        #footer h4 {
-            margin-left: -10px;
-            font-size: 14px; /* Mengurangi ukuran font judul pada perangkat seluler */
+        #footer .hide{
+            display: none;
         }
-    
-        #footer .footer-links ul a {
-            font-size: 10px; /* Menyesuaikan ukuran font tautan pada perangkat seluler */
+
+        #footer .copyright{
+            padding: 10px;
+            font-size: x-small;
+        }
+
+        #footer .footer-links ul {
+            padding: 10px 0;
         }
 
         .column .text01{

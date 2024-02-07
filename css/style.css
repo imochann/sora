@@ -416,13 +416,26 @@ header nav a:hover {
 
 #back-to-top {
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 30px;
+    right: 30px;
     display: none;
     cursor: pointer;
     text-decoration: none;
     z-index: 99;
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
+    background-color: rgb(46, 41, 41);
+    border: none; 
+    border-radius: 15%;
+    line-height: 50px; /* Tinggi garis sesuai dengan tinggi tombol */
+    text-align: center; 
+    color: whitesmoke;
+    transform: rotate(270deg);
   }
+#back-to-top:hover{
+    background-color: gray;
+    }
 
 /* Q&A */
 .faq {
@@ -458,14 +471,14 @@ header nav a:hover {
     font-size: 13px;
     border-top: 1px solid #17455e;
     border-bottom: 1px solid #123649;
-    padding: 20px 0 10px 0;
+    padding: 20px 0 0 0;
   }
 
 #footer .copyright{
     background-color: #333; 
     text-align: center; 
     padding: 20px;
-}  
+}
   
 #footer p {
     font-size: 12px;
@@ -474,27 +487,7 @@ header nav a:hover {
     font-family: "Roboto", sans-serif;
     color: #fff;
   }
-  
-#footer .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: #1e4356;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-  }
-  
-#footer .social-links a:hover {
-    background: #68A4C4;
-    color: #fff;
-    text-decoration: none;
-  }
+
   
 #footer h4 {
     font-size: 16px;
@@ -506,6 +499,7 @@ header nav a:hover {
   
 #footer .footer-links ul {
     list-style-type: none;
+    padding-top: 15px;
   }
   
 #footer .footer-links ul li {
