@@ -426,8 +426,7 @@ header nav a:hover {
     height: 70px;
     font-size: 24px;
     background-image: url(../images/tel5.png);
-    /* background-color: rgba(6, 168, 0, 0.596); */
-    border: none; 
+    box-shadow: -3px 3px 10px 1px rgba(0,0,0,0.37);
     border-radius: 50%;
     line-height: 70px; /* Tinggi garis sesuai dengan tinggi tombol */
     text-align: center; 
