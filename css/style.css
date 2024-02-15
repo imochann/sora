@@ -415,22 +415,7 @@ header nav a:hover {
 }
 
 #callbtn {
-    position: fixed;
-    bottom: 25px;
-    left: 30px;
-    display: block;
-    cursor: pointer;
-    text-decoration: none;
-    z-index: 99;
-    width: 70px;
-    height: 70px;
-    font-size: 24px;
-    background-image: url(../images/tel5.png);
-    box-shadow: -3px 3px 10px 1px rgba(0,0,0,0.37);
-    border-radius: 50%;
-    line-height: 70px; /* Tinggi garis sesuai dengan tinggi tombol */
-    text-align: center; 
-    color: whitesmoke;
+    display: none;
 }
 #callbtn:hover {
     background-color: gray;
@@ -438,14 +423,14 @@ header nav a:hover {
 
 #back-to-top {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 25px;
+    right: 25px;
     display: none;
     cursor: pointer;
     text-decoration: none;
     z-index: 99;
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     font-size: 24px;
     background-color: rgb(46, 41, 41);
     border: none; 
