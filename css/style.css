@@ -38,6 +38,14 @@
     vertical-align: middle;
 }
 
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+/* ヘッダー */
 .logo_main{
     width: 54px;
     height: 69px;
@@ -83,12 +91,6 @@ header nav a:hover {
     transition: 0.3s;
   }
 
-.title{
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding: 15px;
-}
 
 
   
@@ -103,6 +105,7 @@ header nav a:hover {
     line-height: 2;
     margin-bottom: 60px;
 }
+/* key_visual */
 
 #key_visual{
     position: relative;
@@ -126,6 +129,8 @@ header nav a:hover {
     z-index: 2;
     color: #ffffff;
 }
+
+/* concept ご挨拶*/
 
 #concept{
     margin-bottom: 60px;
@@ -166,6 +171,8 @@ header nav a:hover {
 #concept li span{
     color: blue;
 }
+
+/* survice　施設案内 */
 
 #survice{
     padding-top: 80px;
@@ -288,6 +295,8 @@ header nav a:hover {
     width: 700px;
 }
 
+/*announcement そらだより */
+
 .column{
     margin-bottom: 60px;
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
@@ -377,6 +386,8 @@ article p{
     vertical-align: middle;
 }
 
+/* job_info　求人情報 */
+
 .job_info{
     border: #000000 solid 1px;
     text-align: center;
@@ -393,8 +404,36 @@ article p{
 *{
     transition: .5s;
 }
+/* question　Q&A */
+.faq {
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+.question {
+    padding: 20px;
+    background-color: wheat;
+    font-weight: bold;
+    cursor: pointer;
+    border-left: 10px solid  whitesmoke;
+  }
+  
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    transition: max-height 0.4s ease-in-out;
+    font-weight: 700;
+  }
+.question:hover {
+    border-left: 10px solid skyblue;
+    transition: 0.2s;
+  }
 
 
+/* companny 会社概要 */
 
 #companny table {
     max-width: 800px;
@@ -452,33 +491,7 @@ article p{
     background-color: gray;
     }
 
-/* Q&A */
-.faq {
-    margin-bottom: 20px;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-.question {
-    padding: 20px;
-    background-color: wheat;
-    font-weight: bold;
-    cursor: pointer;
-    border-left: 10px solid  whitesmoke;
-  }
-  
-.answer {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 10px;
-    transition: max-height 0.4s ease-in-out;
-    font-weight: 700;
-  }
-.question:hover {
-    border-left: 10px solid skyblue;
-    transition: 0.2s;
-  }
+/* フッター */
 
 #footer {
     background: #0b212d;
