@@ -362,6 +362,9 @@ header nav a:hover {
     display: none;
   }
 
+article p{
+    font-size: 30px;
+} 
 
 
 .job_info{
