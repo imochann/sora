@@ -317,8 +317,13 @@ header nav a:hover {
     line-height: 40px;
     top: 100px;
     color: #000000;
-    /* text-shadow: 2px 2px 2px gray ; */
  }
+
+.column-2{
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background: linear-gradient(45deg, whitesmoke 50%, whitesmoke 75%,  pink 100%)
+}
 
 /* Sora Slider */
 .slides {
@@ -363,7 +368,7 @@ header nav a:hover {
   }
 
 article p{
-    font-size: 50px;
+    font-size: 20px;
     margin-bottom: 19px;
 } 
 
@@ -384,11 +389,6 @@ article p{
     font-size: 30px;
     text-align: center;
 }
-
-
-
-
-
 
 *{
     transition: .5s;
