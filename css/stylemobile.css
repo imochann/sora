@@ -73,6 +73,9 @@
             z-index: 10;
             transform: translateY(0); /* Geser menu ke posisi yang benar saat aktif */
         }
+        .allmargin_bottom{
+            margin-bottom: 50px;
+        }
         
         .title{
             font-size: 18px;
@@ -332,6 +335,25 @@
         .job_info p{
             padding: 14px;
             font-size: 15px;
+        }
+
+        #callbtn {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            display: block;
+            cursor: pointer;
+            text-decoration: none;
+            z-index: 99;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            background-image: url(../images/tel5.png);
+            box-shadow: -3px 3px 10px 1px rgba(0,0,0,0.37);
+            border-radius: 50%;
+            line-height: 60px; /* Tinggi garis sesuai dengan tinggi tombol */
+            text-align: center; 
+            color: whitesmoke;
         }
 
     }
