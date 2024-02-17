@@ -363,9 +363,14 @@ header nav a:hover {
   }
 
 article p{
-    font-size: 30px;
+    font-size: 50px;
+    margin-bottom: 19px;
 } 
 
+.tegami{
+    text-align: center;
+    vertical-align: middle;
+}
 
 .job_info{
     border: #000000 solid 1px;
@@ -592,6 +597,11 @@ article p{
     margin-bottom: 20px;
     text-align: center;
 }
+
+.allmargin_bottom{
+    margin-bottom: 100px;
+}
+
 .offtext{
     padding: 10px;
     text-align: left;
