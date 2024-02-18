@@ -8,13 +8,13 @@
     font-family: 'Noto Sans JP', sans-serif;
  }
 
-
 .a{
     background-color: whitesmoke;
 }
 .b{
     background-color: white;
 }
+
 
 .color span:nth-child(1) {color: blue;}
 .color span:nth-child(2) {color: red;}
@@ -44,6 +44,11 @@
     margin-bottom: 20px;
     padding: 15px;
 }
+.shippori-mincho-regular {
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 /* ヘッダー */
 .logo_main{
@@ -128,6 +133,10 @@ header nav a:hover {
     transform: translate(-50%, -50%);
     z-index: 2;
     color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 /* concept ご挨拶*/
@@ -327,7 +336,15 @@ header nav a:hover {
     top: 100px;
     color: #000000;
  }
-
+.column-2 .text01{
+    font-size: 55px;
+    font-weight: 700;
+    padding: 65px 0;
+    color: #000;
+    position: relative;
+    z-index: 2;
+ 
+}
 .column-2{
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
