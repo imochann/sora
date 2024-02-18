@@ -87,7 +87,7 @@ header nav a{
     height: 48px;
     width: auto;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: bold;
 }
 
 header nav a:hover {
@@ -261,30 +261,36 @@ header nav a:hover {
   }
 
 #ghbtntext {
-    padding: 15px 60px;
-    background-color: #3498db;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
+    padding: 10px 50px;
+    background-color: transparent;
+    color: #0056b3;
+    border: #0056b3 solid 3px;
+    border-radius: 25px; /* Melengkungkan sisi kiri dan kanan */
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s color 0.3s;
   }
 #ghbtntext:hover {
-    background-color: #2980b9;
+    transform: scale(1.1);
+    background-color: #0056b3; 
+    color: white;
   }
 #kanbtntext {
-    padding: 15px 60px;
-    background-color: #3498db;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
+    padding: 10px 50px;
+    background-color: transparent;
+    color: #0056b3;
+    border: #0056b3 solid 3px;
+    border-radius: 25px; /* Melengkungkan sisi kiri dan kanan */
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s color 0.3s;
   }
 #kanbtntext:hover {
-    background-color: #2980b9;
+    transform: scale(1.1);
+    background-color: #0056b3; 
+    color: white;
   }
   
 .ghcostviewer {
@@ -377,15 +383,24 @@ header nav a:hover {
   }
   
 #slidbtntext {
+    padding: 10px 50px;
+    background-color: transparent;
+    color: #0056b3;
+    border: #0056b3 solid 3px;
+    border-radius: 25px; /* Melengkungkan sisi kiri dan kanan */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s color 0.3s;
+
     text-align: center;
     margin-top: 150px;
     margin-bottom: 10px;
-    padding: 15px 60px;
-    background-color: #3498db;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
+  }
+#slidbtntext:hover {
+    transform: scale(1.1);
+    background-color: #0056b3; 
+    color: white;
   }
   
 .slidviewer {
@@ -427,15 +442,24 @@ article p{
 }
 
 #tegbtntext {
+    padding: 10px 50px;
+    background-color: transparent;
+    color: #0056b3;
+    border: #0056b3 solid 3px;
+    border-radius: 25px; /* Melengkungkan sisi kiri dan kanan */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s color 0.3s;
+
     text-align: center;
     margin-top: 150px;
     margin-bottom: 10px;
-    padding: 15px 60px;
-    background-color: #3498db;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
+  }
+#tegbtntext:hover {
+    transform: scale(1.1);
+    background-color: #0056b3; 
+    color: white;
   }
 
 .tegviewer{

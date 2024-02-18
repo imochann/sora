@@ -232,6 +232,13 @@
             font-size: 3vw;
             top: 60%;
          }
+        
+        #slidbtntext{
+            font-size: small;
+        }
+        #tegbtntext{
+            font-size: small;
+        }
 
         .slider1 img{
             display: none;

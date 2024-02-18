@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Button</title>
+<style>
+    body {
+        background-color: gray;
+    }
+
+    .custom-button {
+        position: relative;
+        padding: 10px 20px;
+        background-color: transparent;
+        color: #0056b3;
+        cursor: pointer;
+        border: #0056b3 solid 3px;
+        border-radius: 25px; /* Melengkungkan sisi kiri dan kanan */
+        outline: none;
+        overflow: hidden;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .custom-button::before {
+        content: "\25BC"; /* kode karakter panah ke bawah */
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        opacity: 0;
+        transition: opacity 0.3s, top 0.3s;
+    }
+
+    .custom-button:hover {
+        background-color: #0056b3; 
+        color: white;
+    }
+
+    .custom-button:hover::before {
+        top: 100%;
+        opacity: 1;
+    }
+</style>
+</head>
+<body>
+    <button class="custom-button">詳しくはこちら</button>
+</body>
+</html>
