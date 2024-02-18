@@ -216,6 +216,37 @@ kancost1.forEach(kancost2 => {
 });
 //kancost Func
 
+//手紙 Func
+const teg1=document.querySelectorAll('.teg2');
+
+function toggletegviewer() {
+  const tegviewer = this.nextElementSibling;
+  if (tegviewer.style.maxHeight) {
+    tegviewer.style.padding = '0px'; // Menghapus padding saat elemen tertutup
+    tegviewer.style.maxHeight = null;
+    document.getElementById('tegbtntext').textContent = "詳しくはこちら"; // Perbarui teks button
+    document.getElementById('tegarrow').textContent = "▼"; // Perbarui teks button dengan karakter Unicode
+  } else {
+    tegviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
+    tegviewer.style.maxHeight = tegviewer.scrollHeight + 'px';
+    document.getElementById('tegbtntext').textContent = "閉じる"; // Perbarui teks button
+    document.getElementById('tegarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
+    
+     
+
+  }
+}
+
+teg1.forEach(teg2 => {
+  const tegbtn = teg2.querySelector('.tegbtn');
+  tegbtn.addEventListener('click', toggletegviewer);
+});
+
+
+
+//手紙 Func
+
+
 
 // backToTopButton Function
 // Saat halaman dimuat, pasang event listener untuk mengontrol visibilitas tombol
