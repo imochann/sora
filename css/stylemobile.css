@@ -218,7 +218,7 @@
             padding: 10px 0;
         }
 
-        .column .text01{
+        .column .text01, .column-2 .text01{
             font-size: 8vw;
             top: 0px;
         }
@@ -228,10 +228,17 @@
             width: 60%;
         }
 
-        .column p{
+        .column p, .column-2 p{
             font-size: 3vw;
             top: 60%;
          }
+        
+        #slidbtntext{
+            font-size: small;
+        }
+        #tegbtntext{
+            font-size: small;
+        }
 
         .slider1 img{
             display: none;
