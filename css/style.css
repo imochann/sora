@@ -145,15 +145,16 @@ header nav a:hover {
 #key_visual .logo1{
     font-size: 60px;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     color: #ffffff;
     font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+}
+.logo_03{
+    width: 200px;
+    height: auto;
 }
 
 /* concept ご挨拶*/
@@ -395,7 +396,7 @@ header nav a:hover {
     transition: background-color 0.3s color 0.3s;
 
     text-align: center;
-    margin-top: 150px;
+    margin-top: 120px;
     margin-bottom: 10px;
   }
 #slidbtntext:hover {
@@ -454,7 +455,7 @@ article p{
     transition: background-color 0.3s color 0.3s;
 
     text-align: center;
-    margin-top: 150px;
+    margin-top: 120px;
     margin-bottom: 10px;
   }
 #tegbtntext:hover {
