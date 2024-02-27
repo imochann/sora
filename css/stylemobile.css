@@ -244,6 +244,12 @@
         #tegbtntext{
             font-size: small;
         }
+        .tegviewer{
+            width: 100%;
+        }
+        .tegviewer img{
+            height: 430px;
+        }
 
         .slider1 img{
             display: none;
