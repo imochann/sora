@@ -92,9 +92,9 @@ function toggletegviewer() {
     tegviewer.style.maxHeight = tegviewer.scrollHeight + 'px';
     document.getElementById('tegbtntext').textContent = "閉じる"; // Perbarui teks button
     document.getElementById('tegarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
-    tegamiblok = 1250; //Set AutoSlidTambahan
+    tegamiblok = 1300; //Set AutoSlidTambahan
     if (isMobile) {
-      tegamiblok = 480; // Ganti offset untuk mobile
+      tegamiblok = 500; // Ganti offset untuk mobile
     }
     
     // Scroll ke bawah elemen terbuka dengan offset yang sesuai
