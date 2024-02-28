@@ -46,6 +46,15 @@
     border-left: #0056b3 solid 5px;
     padding: 15px;
 }
+.title_child{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #0056b3;
+    padding-left: 1%;
+}
+
+
+
 .shippori-mincho-regular {
     font-family: "Shippori Mincho", serif;
     font-weight: 400;
