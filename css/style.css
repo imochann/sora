@@ -366,15 +366,12 @@ header nav a:hover {
     padding: 65px 0;
     color: skyblue;
     text-shadow: 2px 2px 2px green;
-    position: relative;
-    z-index: 2;
  
 }
 .column-2{
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     margin-bottom: 50px;
-    /* background: linear-gradient(45deg, whitesmoke 50%, whitesmoke 75%,  skyblue 100%) */
 }
 
 /* Sora Slider */
@@ -428,14 +425,13 @@ header nav a:hover {
     display: none;
   }
 
-article p{
-    font-size: 20px;
-    margin-bottom: 19px;
-} 
-
 .tegami{
     text-align: center;
     vertical-align: middle;
+}
+.tegami p{
+    font-size: 20px;
+    margin-bottom: 19px;
 }
 
 .teg2{
@@ -472,7 +468,7 @@ margin: 0 auto;
 transition: max-height 0.5s ease-in-out;
 }
 
-.tegviewer img{
+.sliderteg img{
     width: 100%;
     height: 1200px;
 }

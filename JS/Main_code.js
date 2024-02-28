@@ -38,7 +38,7 @@ $(document).on('ready', function(){
       cssEase:'linear'
   });
 
-  $(".slider3").slick({
+  $(".sliderteg").slick({
     arrows:false,
     dots: true,
     autoplay: true,
