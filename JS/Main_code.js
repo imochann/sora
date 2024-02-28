@@ -94,7 +94,7 @@ function toggletegviewer() {
     document.getElementById('tegarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
     tegamiblok = 1250; //Set AutoSlidTambahan
     if (isMobile) {
-      tegamiblok = 500; // Ganti offset untuk mobile
+      tegamiblok = 480; // Ganti offset untuk mobile
     }
     
     // Scroll ke bawah elemen terbuka dengan offset yang sesuai
@@ -205,11 +205,11 @@ kancost1.forEach(kancost2 => {
 ///////SoraDayori Slider Funct//////
 const slides1 = document.querySelectorAll('.slides');
 let isSliderInitialized = false;
-let slidscrollOffset = 6600; // Offset default untuk desktop
+let slidscrollOffset = 6450; // Offset default untuk desktop
 
 // Periksa apakah tampilan saat ini adalah versi mobile
 if (isMobile) {
-  slidscrollOffset = 4500; // Ganti offset untuk mobile
+  slidscrollOffset = 4000; // Ganti offset untuk mobile
 }
 
 function toggleSlidviewer() {
