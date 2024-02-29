@@ -82,9 +82,12 @@
         }
         
         .title{
-            font-size: 18px;
-            margin-top: 10px;
+            font-size: 22px;
             padding: 5px;
+        }
+
+        .title_child{
+            font-size: 16px;
         }
 
         #key_visual .main_image img{
@@ -193,6 +196,11 @@
             height: auto; /* Menyesuaikan tinggi gambar secara otomatis */
         }
 
+        #serviceplan p{
+            padding: 5px 15px;
+            font-size: 13px;
+        }
+
         #footer {
             padding: 0;
             width: 100%;
@@ -226,6 +234,7 @@
             font-size: 8vw;
             top: 0px;
             padding: 25px 0;
+            z-index: 2;
         }
 
         .column img{
@@ -348,7 +357,7 @@
             height: 90px;
         }
         #guide .textarea2{
-            font-size: 15px;
+            font-size: 13px;
         }
         .job_info p{
             padding: 14px;
