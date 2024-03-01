@@ -483,6 +483,49 @@ transition: max-height 0.5s ease-in-out;
     width: 100%;
     height: 1200px;
 }
+.slidersora{
+    background-image: url("../images/bg11.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 50px rgba(255, 255, 250, 1);
+}
+.slidersora_msg {
+    position: relative;
+    bottom: -50px;
+    margin-bottom: -300px;
+    margin-left: 600px;
+    z-index: 2;
+}
+
+.slidersora_msg img {
+    width: 250px;
+    height: auto;
+    animation: spin 20s linear infinite; /* Menjalankan animasi rotasi selama 5 detik dengan kecepatan linear secara terus menerus */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg); /* Rotasi mulai dari 0 derajat */
+    }
+    100% {
+      transform: rotate(360deg); /* Rotasi selesai pada 360 derajat (satu putaran) */
+    }
+  }
+
+.txtslidersora{
+    position: relative;
+    font-size: small;
+    margin-bottom: -130px;
+    bottom: -90px;
+    margin-left: 200px;
+    z-index: 3;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl; /* Menulis teks secara vertikal dari atas ke bawah */
+    text-orientation: mixed; /* Menjaga orientasi teks agar tetap tegak lurus */
+    white-space: nowrap; /* Mencegah wrap teks */
+  }
 
 /* job_info　求人情報 */
 

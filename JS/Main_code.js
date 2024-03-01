@@ -46,6 +46,29 @@ $(document).on('ready', function(){
     fade:true, 
     cssEase:'linear'
   });
+  $(".slidersora").slick({
+    arrows:false,
+    slidesToShow: 1, // Menampilkan satu slide sekaligus
+    slidesToScroll: 1, // Menggeser satu slide sekaligus
+    variableWidth: true, // Menyesuaikan lebar slide secara otomatiss
+    autoplay: true, // Mengaktifkan autoplay
+    autoplaySpeed: 0,
+    speed: 20000, // Mengubah kecepatan animasi menjadi lebih lambat
+    cssEase: 'linear', // Menggunakan fungsi pergerakan yang lebih halus
+    swipe: true, // Mengaktifkan swipe untuk perangkat seluler
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          
+        }
+      }
+    ]
+    
+  });
   //Slider Initializer
 
   //Mobile Menu Initializer
