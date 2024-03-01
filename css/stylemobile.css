@@ -267,6 +267,11 @@
             width: 85%;
             height: 200px;
         }
+        .slidersora img{
+            width: 100%;
+            height: 200px;
+        }
+
         #swiper {
             display: block;
             width: 100%;
