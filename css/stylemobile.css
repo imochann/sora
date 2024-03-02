@@ -237,14 +237,14 @@
             z-index: 2;
         }
 
-        .column img{
-            top: -170px;
-            width: 60%;
+        .column .img{
+            bottom: 180px;
+            width: 65%;
         }
 
         .column p, .column-2 p{
             font-size: 3vw;
-            top: 60%;
+            top: 50px;
          }
         
         #slidbtntext{
