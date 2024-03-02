@@ -359,7 +359,8 @@ header nav a:hover {
 }
 .column .img{
     position: relative;
-    bottom: 280px;
+    margin-bottom: -80px;
+    bottom: 300px;
     transform: translateY(5%);
     z-index: 2;
 }
@@ -484,6 +485,8 @@ transition: max-height 0.5s ease-in-out;
     height: 1200px;
 }
 .slidersora{
+    width: 95%;
+    margin: 0 auto;
     background-image: url("../images/bg11.png");
     background-repeat: no-repeat;
     background-size: cover;
