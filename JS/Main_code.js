@@ -225,93 +225,93 @@ kancost1.forEach(kancost2 => {
 });
 //kancost Func
 
-///////SoraDayori Slider Funct//////
-const slides1 = document.querySelectorAll('.slides');
-let isSliderInitialized = false;
-let slidscrollOffset = 6450; // Offset default untuk desktop
+// ///////SoraDayori Slider Funct//////
+// const slides1 = document.querySelectorAll('.slides');
+// let isSliderInitialized = false;
+// let slidscrollOffset = 6450; // Offset default untuk desktop
 
-// Periksa apakah tampilan saat ini adalah versi mobile
-if (isMobile) {
-  slidscrollOffset = 4000; // Ganti offset untuk mobile
-}
+// // Periksa apakah tampilan saat ini adalah versi mobile
+// if (isMobile) {
+//   slidscrollOffset = 4000; // Ganti offset untuk mobile
+// }
 
-function toggleSlidviewer() {
-  const slidviewer = this.nextElementSibling;
-  const offsetTopslid = slidviewer.offsetTop;
-  if (slidviewer.style.maxHeight) {
-    slidviewer.style.padding = '0px'; // Menghapus padding saat elemen tertutup
-    slidviewer.style.maxHeight = null;
-    document.getElementById('slidbtntext').textContent = "詳しくはこちら"; // Perbarui teks button
-    document.getElementById('slidarrow').textContent = "▼"; // Perbarui teks button dengan karakter Unicode
-    soradayoriblok = 0;
-  } else {
-    if (!isSliderInitialized) {
-      // Inisialisasi slider hanya jika belum diinisiasi
-      const slider1 = slidviewer.querySelector('.slider1');
+// function toggleSlidviewer() {
+//   const slidviewer = this.nextElementSibling;
+//   const offsetTopslid = slidviewer.offsetTop;
+//   if (slidviewer.style.maxHeight) {
+//     slidviewer.style.padding = '0px'; // Menghapus padding saat elemen tertutup
+//     slidviewer.style.maxHeight = null;
+//     document.getElementById('slidbtntext').textContent = "詳しくはこちら"; // Perbarui teks button
+//     document.getElementById('slidarrow').textContent = "▼"; // Perbarui teks button dengan karakter Unicode
+//     soradayoriblok = 0;
+//   } else {
+//     if (!isSliderInitialized) {
+//       // Inisialisasi slider hanya jika belum diinisiasi
+//       const slider1 = slidviewer.querySelector('.slider1');
 
-        if (isMobile) {
-          // Ubah Url Image Slider1 Agar tidak di download
-          const slider1Images = slidviewer.querySelectorAll('.slider1 img');
-            slider1Images.forEach((image) => {
-              image.src = ''; // Atur src gambar menjadi kosong
-            });
-          // Inisialisasi slider untuk layar mobile
-          var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 20,
-            cssMode: true,
-            mousewheel: true,
-            keyboard: true,
-            loop: true,
-            autoplay: {
-              delay: 4000,
-              disableOnInteraction: false,
-            },
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-          });
+//         if (isMobile) {
+//           // Ubah Url Image Slider1 Agar tidak di download
+//           const slider1Images = slidviewer.querySelectorAll('.slider1 img');
+//             slider1Images.forEach((image) => {
+//               image.src = ''; // Atur src gambar menjadi kosong
+//             });
+//           // Inisialisasi slider untuk layar mobile
+//           var swiper = new Swiper(".mySwiper", {
+//             spaceBetween: 20,
+//             cssMode: true,
+//             mousewheel: true,
+//             keyboard: true,
+//             loop: true,
+//             autoplay: {
+//               delay: 4000,
+//               disableOnInteraction: false,
+//             },
+//             pagination: {
+//               el: ".swiper-pagination",
+//               clickable: true,
+//             },
+//           });
           
 
-        } else {
-          // Ubah Url Image Swiper Agar tidak di download
-          const swiperImages = slidviewer.querySelectorAll('.swiper-wrapper img');
-          swiperImages.forEach((image) => {
-              image.src = ''; // Atur src gambar menjadi kosong
-            });
-          // Inisialisasi slider1 untuk layar desktop
-          $(slider1).slick({
-            arrows: true,
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 6000,
-            fade: true,
-            cssEase: 'linear'
-          });
+//         } else {
+//           // Ubah Url Image Swiper Agar tidak di download
+//           const swiperImages = slidviewer.querySelectorAll('.swiper-wrapper img');
+//           swiperImages.forEach((image) => {
+//               image.src = ''; // Atur src gambar menjadi kosong
+//             });
+//           // Inisialisasi slider1 untuk layar desktop
+//           $(slider1).slick({
+//             arrows: true,
+//             dots: true,
+//             autoplay: true,
+//             autoplaySpeed: 6000,
+//             fade: true,
+//             cssEase: 'linear'
+//           });
           
-        }
+//         }
 
-      isSliderInitialized = true; // Setel penanda bahwa slider sudah diinisiasi
-    }
-    slidviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
-    slidviewer.style.maxHeight = slidviewer.scrollHeight + 'px';
-    document.getElementById('slidbtntext').textContent = "閉じる"; // Perbarui teks button
-    document.getElementById('slidarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
-    soradayoriblok = 2000; //nilaoi gk tau soalnya gk ada autoscrooll dibawah soradayori
+//       isSliderInitialized = true; // Setel penanda bahwa slider sudah diinisiasi
+//     }
+//     slidviewer.style.padding = '30px 10px 30px 10px'; // Menambahkan padding saat elemen terbuka
+//     slidviewer.style.maxHeight = slidviewer.scrollHeight + 'px';
+//     document.getElementById('slidbtntext').textContent = "閉じる"; // Perbarui teks button
+//     document.getElementById('slidarrow').textContent = ""; // Perbarui teks button dengan karakter Unicode
+//     soradayoriblok = 2000; //nilaoi gk tau soalnya gk ada autoscrooll dibawah soradayori
 
-    // Scroll ke bawah elemen terbuka dengan offset yang sesuai
-    window.scroll({
-      top: offsetTopslid + slidscrollOffset + tegamiblok + ghcostblok + kancostblok, // Total Offset px
-      behavior: 'smooth', // Untuk efek scrolling yang mulus
-    });
-  }
-}
+//     // Scroll ke bawah elemen terbuka dengan offset yang sesuai
+//     window.scroll({
+//       top: offsetTopslid + slidscrollOffset + tegamiblok + ghcostblok + kancostblok, // Total Offset px
+//       behavior: 'smooth', // Untuk efek scrolling yang mulus
+//     });
+//   }
+// }
 
-slides1.forEach(slides => {
-  const slidbtn = slides.querySelector('.slidbtn');
-  slidbtn.addEventListener('click', toggleSlidviewer);
-});
-///////SoraDayori Slider Funct//////
+// slides1.forEach(slides => {
+//   const slidbtn = slides.querySelector('.slidbtn');
+//   slidbtn.addEventListener('click', toggleSlidviewer);
+// });
+// ///////SoraDayori Slider Funct//////
 
 
 
