@@ -48,14 +48,16 @@ $(document).on('ready', function(){
   });
   $(".slidersora").slick({
     arrows:false,
+    infinite: true,
     slidesToShow: 1, // Menampilkan satu slide sekaligus
     slidesToScroll: 1, // Menggeser satu slide sekaligus
     variableWidth: true, // Menyesuaikan lebar slide secara otomatiss
+    pauseOnFocus : false, //False AutoplayPause ketika diclick
+    pauseOnHover: false, 
     autoplay: true, // Mengaktifkan autoplay
     autoplaySpeed: 0,
     speed: 20000, // Mengubah kecepatan animasi menjadi lebih lambat
     cssEase: 'linear', // Menggunakan fungsi pergerakan yang lebih halus
-    swipe: true, // Mengaktifkan swipe untuk perangkat seluler
     responsive: [
       {
         breakpoint: 768,
@@ -63,7 +65,6 @@ $(document).on('ready', function(){
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          
         }
       }
     ]
